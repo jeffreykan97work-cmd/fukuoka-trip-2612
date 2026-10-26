@@ -241,6 +241,28 @@
   }
   .day-foot .lbl{color:var(--gold);font-size:11px;letter-spacing:.18em;flex:0 0 auto;padding-top:2px}
 
+  /* ---------- OPTIONS ---------- */
+  .opt-bar{
+    display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+    background:#f1f7f2;border:1px solid #d8e8db;border-radius:12px;
+    padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--ink-2);
+  }
+  .opt-bar b{color:var(--vermilion);font-size:15px}
+  .opt-bar .btn{margin-left:auto}
+  .opt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .opt{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:18px 18px 16px;display:flex;flex-direction:column;transition:.2s;
+  }
+  .opt.on{border-color:var(--vermilion);box-shadow:0 8px 24px rgba(178,59,46,.12)}
+  .opt-top{display:flex;justify-content:space-between;gap:8px;font-size:11px;letter-spacing:.06em;color:var(--ink-3);margin-bottom:8px}
+  .opt-fit{color:#3f6a4c}
+  .opt h4{margin:0 0 6px;font-size:15.5px}
+  .opt p{margin:0 0 10px;font-size:12.8px;color:var(--ink-2);line-height:1.65;flex:1}
+  .opt-meta{font-size:11.5px;color:var(--ink-3);border-top:1px dotted var(--line);padding-top:8px;margin-bottom:10px}
+  .opt-btn{justify-content:center;font-size:12px;padding:7px 12px}
+  .opt.on .opt-btn{background:var(--vermilion);border-color:var(--vermilion)}
+
   /* ---------- STAY ---------- */
   .stay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
   .stay{
@@ -356,7 +378,7 @@
   @media(max-width:860px){
     .route{grid-template-columns:1fr 1fr}
     .stop:nth-child(2):after{display:none}
-    .logic,.stay-grid,.groups,.info-grid,.budget{grid-template-columns:1fr}
+    .logic,.stay-grid,.groups,.info-grid,.budget,.opt-grid{grid-template-columns:1fr}
     .airbnb-check ul{grid-template-columns:1fr}
     .day{grid-template-columns:1fr}
     .day-side{display:flex;align-items:center;gap:12px;text-align:left;border-right:0;border-bottom:1px solid var(--line);padding:14px 20px}
@@ -426,6 +448,7 @@
       <span class="chip">3 基地 / 7 晚</span>
       <span class="chip">軍艦島 + 原爆資料館</span>
       <span class="chip">紅葉 2 點</span>
+      <span class="chip">每日 09:00 出發</span>
       <span class="chip warn">少樓梯 · 多休息</span>
     </div>
   </div>
@@ -436,6 +459,7 @@
     <a href="#logic" class="on">路線思路</a>
     <a href="#koyo">紅葉時間軸</a>
     <a href="#itinerary">逐日行程</a>
+    <a href="#options">行程選項</a>
     <a href="#stay">住宿</a>
     <a href="#budget">費用試算</a>
     <a href="#booking">預訂清單</a>
@@ -497,6 +521,11 @@
   <div class="top-note">
     <span>✈️</span>
     <div><b>航班時間未定：</b>你話已訂但未講時間。Day 1 同 Day 8 我用「下午到、傍晚走」做骨幹，你俾我實際航班時間，我即刻幫你收緊或放鬆這兩日。</div>
+  </div>
+
+  <div class="top-note" style="background:#f1f7f2;border-color:#d8e8db">
+    <span>🕘</span>
+    <div><b>每日 09:00 出門口：</b>全部日程已重排，冇一日要 8 點起身。Day 5 軍艦島改搭 10:30 班（唔使趕 09:00 船），Day 8 視航班再定。</div>
   </div>
 </section>
 
@@ -605,13 +634,13 @@
       <div class="day-top"><h3>糸島 · 海景與牡蠣</h3><span class="theme">全日自駕 · 約 80 km</span></div>
       <div class="tags"><span class="tag t-nature">自然</span><span class="tag t-food">美食</span><span class="tag t-shop">打卡</span></div>
       <ul class="tl">
-        <li><span class="tm">08:30</span><b>博多出發</b><span class="sub">行福岡都市高速 → 西九州道，避開市區塞車。</span><span class="drive">🚗 50 分</span></li>
-        <li><span class="tm">09:20</span><b>桜井二見ヶ浦</b><span class="sub">海中白色鳥居＋夫婦岩，停車場行 2 分鐘就到，全程平坦</span><span class="note">糸島最出名打卡位；風大，長者喺車邊或鳥居前影相就夠，唔需要行落沙灘。</span></li>
-        <li><span class="tm">10:10</span><b>櫻井神社</b><span class="sub">境內平坦、有樹蔭同長椅；同二見ヶ浦係同一個信仰系統</span><span class="drive">🚗 10 分</span></li>
-        <li><span class="tm">11:00</span><b>芥屋の大門（體力許可才去）</b><span class="sub">玄武岩海蝕洞，高 64 米；可坐遊覽船由海上睇，唔使行落斜</span><span class="note">落去洞口有斜路同梯級，長者可以留喺停車場展望位；坐船就要上落船，視情況決定。</span></li>
-        <li><span class="tm">12:15</span><b>岐志漁港 牡蠣小屋午餐</b><span class="sub">炭燒糸島蠔、蠔飯、帆立貝、海螺；中宮丸 / 日進丸可預約</span><span class="note">¥2,500–3,500/人；坐矮凳，長者建議揀有靠背座位嘅店，訂位時講聲。10:00–17:00，賣完早收。</span></li>
+        <li><span class="tm">09:00</span><b>博多出發</b><span class="sub">行福岡都市高速 → 西九州道，避開市區塞車。</span><span class="drive">🚗 50 分</span></li>
+        <li><span class="tm">09:50</span><b>桜井二見ヶ浦</b><span class="sub">海中白色鳥居＋夫婦岩，停車場行 2 分鐘就到，全程平坦</span><span class="note">糸島最出名打卡位；風大，長者喺車邊或鳥居前影相就夠，唔需要行落沙灘。</span></li>
+        <li><span class="tm">10:35</span><b>櫻井神社</b><span class="sub">境內平坦、有樹蔭同長椅；同二見ヶ浦係同一個信仰系統</span><span class="drive">🚗 10 分</span></li>
+        <li><span class="tm">11:20</span><b>芥屋の大門（體力許可才去）</b><span class="sub">玄武岩海蝕洞，高 64 米；可坐遊覽船由海上睇，唔使行落斜</span><span class="note">落去洞口有斜路同梯級，長者可以留喺停車場展望位；坐船就要上落船，視情況決定。</span></li>
+        <li><span class="tm">12:20</span><b>岐志漁港 牡蠣小屋午餐</b><span class="sub">炭燒糸島蠔、蠔飯、帆立貝、海螺；中宮丸 / 日進丸可預約</span><span class="note">¥2,500–3,500/人；坐矮凳，長者建議揀有靠背座位嘅店，訂位時講聲。10:00–17:00，賣完早收。</span></li>
         <li><span class="tm">14:00</span><b>海邊 cafe 休息</b><span class="sub">坐低飲咖啡、睇海；12 月日落約 17:10，唔急。</span></li>
-        <li><span class="tm">15:30</span><b>回博多</b><span class="sub">車程 50 分鐘，返酒店休息一陣。</span><span class="drive">🚗 50 分</span></li>
+        <li><span class="tm">15:15</span><b>回博多</b><span class="sub">車程 50 分鐘，返酒店休息一陣。</span><span class="drive">🚗 50 分</span></li>
         <li><span class="tm">18:30</span><b>晚餐：博多 水炊き / 燒鳥</b><span class="sub">行去食，唔使再揸車。</span></li>
       </ul>
       <div class="day-foot"><span class="lbl">體力</span>今日冇樓梯行程；牡蠣小屋坐矮凳，訂位時要求靠背位。千如寺、白糸の滝樓梯多，今次剔走。</div>
@@ -630,15 +659,15 @@
       <div class="day-top"><h3>舞鶴公園紅葉 · 門司港</h3><span class="theme">來回約 150 km · 全日平地</span></div>
       <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-reki">歷史</span><span class="tag t-food">美食</span><span class="tag t-nature">海景</span></div>
       <ul class="tl">
-        <li><span class="tm">08:30</span><b>博多出發</b><span class="sub">先去舞鶴公園，再上九州道去門司港。</span><span class="drive">🚗 10 分</span></li>
-        <li><span class="tm">08:45</span><b>舞鶴公園・大濠公園（紅葉）</b><span class="sub">福岡城跡外圍，銀杏＋紅葉，全平坦、長椅多、有洗手間</span><span class="note">泊車 ¥300 左右；行 30–40 分鐘就夠，唔使上城跡石階。落葉就改去友泉亭公園（20 分鐘車程）。</span></li>
-        <li><span class="tm">10:00</span><b>出發門司港</b><span class="sub">九州道 → 門司港，全程高速。</span><span class="drive">🚗 1 小時 15 分</span></li>
-        <li><span class="tm">11:20</span><b>門司港レトロ · 午餐燒咖喱</b><span class="sub">BEAR FRUITS、伽哩本舗；坐低慢慢食。</span></li>
-        <li><span class="tm">13:00</span><b>門司港駅 · ブルーウィングもじ · 海峡プラザ</b><span class="sub">1914 年文藝復興式車站、跳橋、室內商場；全部平地</span><span class="note">跳橋 10:00 起整點開橋，每次約 20 分鐘，記得夾時間。</span></li>
-        <li><span class="tm">14:30</span><b>關門連絡船 → 唐戸（可選）</b><span class="sub">5 分鐘過海，船上正對關門橋；上落船有少量梯級，職員會扶</span><span class="note">如果長者攰，可以留在門司港飲咖啡，唔一定要過海。</span></li>
-        <li><span class="tm">15:30</span><b>唐戸市場 · カモンワーフ</b><span class="sub">室內市場，行得舒服；平日店舖較少，餐廳照開。</span></li>
-        <li><span class="tm">16:30</span><b>門司港レトロ展望室</b><span class="sub">31 樓，搭電梯直上，睇關門海峽全景；¥300</span><span class="drive">🚗 10 分</span></li>
-        <li><span class="tm">17:30</span><b>回博多</b><span class="sub">18:45 左右到，晚餐喺博多解決。</span><span class="drive">🚗 1 小時 15 分</span></li>
+        <li><span class="tm">09:00</span><b>博多出發</b><span class="sub">先去舞鶴公園，再上九州道去門司港。</span><span class="drive">🚗 10 分</span></li>
+        <li><span class="tm">09:15</span><b>舞鶴公園・大濠公園（紅葉）</b><span class="sub">福岡城跡外圍，銀杏＋紅葉，全平坦、長椅多、有洗手間</span><span class="note">行 45 分鐘就夠，唔使上城跡石階；泊車 ¥300 左右。落葉就改去友泉亭公園。</span></li>
+        <li><span class="tm">10:15</span><b>出發門司港</b><span class="sub">九州道 → 門司港，全程高速。</span><span class="drive">🚗 1 小時 15 分</span></li>
+        <li><span class="tm">11:35</span><b>門司港レトロ · 午餐燒咖喱</b><span class="sub">BEAR FRUITS、伽哩本舗；坐低慢慢食。</span></li>
+        <li><span class="tm">13:00</span><b>門司港駅 · ブルーウィングもじ · 海峡プラザ</b><span class="sub">1914 年文藝復興式車站、跳橋、室內商場；全部平地</span><span class="note">跳橋整點開橋，每次約 20 分鐘，記得夾時間。</span></li>
+        <li><span class="tm">14:15</span><b>關門連絡船 → 唐戸（可選）</b><span class="sub">5 分鐘過海，船上正對關門橋；上落船有少量梯級，職員會扶</span><span class="note">如果長者攰，可以留在門司港飲咖啡，唔一定要過海。</span></li>
+        <li><span class="tm">15:15</span><b>唐戸市場 · カモンワーフ</b><span class="sub">室內市場，行得舒服；平日店舖較少，餐廳照開。</span></li>
+        <li><span class="tm">16:15</span><b>門司港レトロ展望室</b><span class="sub">31 樓，搭電梯直上，睇關門海峽全景；¥300</span><span class="drive">🚗 10 分</span></li>
+        <li><span class="tm">17:00</span><b>回博多</b><span class="sub">18:15 左右到，晚餐喺博多解決。</span><span class="drive">🚗 1 小時 15 分</span></li>
       </ul>
       <div class="day-foot"><span class="lbl">體力</span>全日平地＋電梯；關門隧道人道要行 780 米，今次唔安排。海風刺骨，帽同頸巾必備。</div>
     </div>
@@ -656,17 +685,17 @@
       <div class="day-top"><h3>太宰府紅葉 → 長崎 · 原爆與夜景</h3><span class="theme">紅葉 #1 · 搬基地 · 約 200 km</span></div>
       <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-reki">歷史</span><span class="tag t-night">夜景</span><span class="tag t-move">移動</span></div>
       <ul class="tl">
-        <li><span class="tm">07:50</span><b>博多出發</b><span class="sub">早少少出發，避開太宰府人潮同旅遊巴。</span><span class="drive">🚗 30 分</span></li>
-        <li><span class="tm">08:30</span><b>太宰府天満宮（紅葉）</b><span class="sub">紅葉＋銀杏、參道、飛梅；境內免費借輪椅，有無障礙參拜路線</span><span class="note">用無障礙路線繞過太鼓橋石階；本殿前有少量梯級，可以喺下面參拜。泊車用參道停車場。</span></li>
-        <li><span class="tm">10:00</span><b>參道 梅ヶ枝餅 · 咖啡休息</b><span class="sub">現烤梅ヶ枝餅，坐低食；參道全程石畳但無段差。</span></li>
-        <li><span class="tm">10:45</span><b>九州国立博物館（可選）</b><span class="sub">室內、全程電扶梯＋電梯；如果天氣差就入嚟。</span><span class="note">長者唔想行可以留喺參道茶屋等。</span></li>
-        <li><span class="tm">12:00</span><b>午餐：太宰府參道</b><span class="sub">蕎麥、天婦羅、梅ヶ枝餅。</span></li>
-        <li><span class="tm">13:00</span><b>出發長崎</b><span class="sub">九州道 → 長崎道，中途金立 SA 休息。</span><span class="drive">🚗 1 小時 50 分</span></li>
+        <li><span class="tm">09:00</span><b>博多出發</b><span class="sub">避開返工車潮，太宰府 35 分鐘就到。</span><span class="drive">🚗 35 分</span></li>
+        <li><span class="tm">09:35</span><b>太宰府天満宮（紅葉）</b><span class="sub">紅葉＋銀杏、參道、飛梅；境內免費借輪椅，有無障礙參拜路線</span><span class="note">行得慢都夠時間；用無障礙路線繞過太鼓橋石階，本殿前有少量梯級，喺下面參拜都可以。</span></li>
+        <li><span class="tm">10:50</span><b>參道 梅ヶ枝餅 · 咖啡休息</b><span class="sub">現烤梅ヶ枝餅，坐低食；參道石畳但無段差。</span></li>
+        <li><span class="tm">11:15</span><b>九州国立博物館（可選）</b><span class="sub">室內、全程電扶梯＋電梯；落雨就入嚟。</span><span class="note">長者唔想行可以留喺參道茶屋等。</span></li>
+        <li><span class="tm">12:15</span><b>午餐：太宰府參道</b><span class="sub">蕎麥、天婦羅、梅ヶ枝餅。</span></li>
+        <li><span class="tm">13:10</span><b>出發長崎</b><span class="sub">九州道 → 長崎道，中途金立 SA 休息。</span><span class="drive">🚗 1 小時 50 分</span></li>
         <li><span class="tm">15:00</span><b>長崎原爆資料館</b><span class="sub">¥200，約 1 小時；全館電梯、無障礙</span><span class="note">2026/11/24 起 C 區「核兵器のない世界」維修關閉至 2027/3，A、B 區照開。</span></li>
         <li><span class="tm">16:15</span><b>平和公園 · 爆心地公園</b><span class="sub">平地，公園內有長椅；唔使行上浦上天主堂斜路。</span></li>
-        <li><span class="tm">16:45</span><b>酒店 check-in</b><span class="sub">放低行李，休息 30 分鐘。</span></li>
+        <li><span class="tm">16:40</span><b>酒店 check-in</b><span class="sub">放低行李，休息 40 分鐘。</span></li>
         <li><span class="tm">17:30</span><b>稻佐山纜車 · 山頂夜景</b><span class="sub">纜車＋山頂室內展望台，全程唔使行樓梯；來回約 ¥1,250</span><span class="note">日落 17:10、夜景 18:00 後；山頂風大，比市區低 3–4°C。</span></li>
-        <li><span class="tm">19:30</span><b>晚餐：思案橋 / 浜町</b><span class="sub">海鮮居酒屋、長崎和牛。</span></li>
+        <li><span class="tm">19:15</span><b>晚餐：思案橋 / 浜町</b><span class="sub">海鮮居酒屋、長崎和牛。</span></li>
       </ul>
       <div class="day-foot"><span class="lbl">體力</span>太宰府平坦＋可借輪椅；原爆資料館全電梯；稻佐山纜車直上。今日係紅葉重點，行得慢都夠時間。</div>
     </div>
@@ -684,16 +713,17 @@
       <div class="day-top"><h3>軍艦島 · 長崎市內</h3><span class="theme">世界遺產 · 半日船 ＋ 市內平地</span></div>
       <div class="tags"><span class="tag t-heritage">世界遺產</span><span class="tag t-reki">歷史</span><span class="tag t-food">美食</span></div>
       <ul class="tl">
-        <li><span class="tm">08:15</span><b>長崎港ターミナル集合</b><span class="sub">やまさ海運 09:00 班（2.5 小時）或 軍艦島クルーズ 09:10 班</span><span class="note">¥4,000–5,350/人；部分公司另收端島設施利用料 ¥650。預約時要講清楚有長者同行。</span></li>
-        <li><span class="tm">09:00</span><b>出航 → 軍艦島（端島）</b><span class="sub">船上導覽、海上望三菱長崎造船廠、軍艦島全景</span><span class="note">⚠️ 上陸碼頭有 <b>10–27 級樓梯</b>（視潮汐），島內參觀路線本身無障礙。如果長者上落有困難，可以揀「船內待機」只週遊，唔上陸。</span></li>
-        <li><span class="tm">11:30</span><b>返港</b><span class="sub">上陸與否視海象，船公司會即場通知；甲板風大，長者留船艙。</span></li>
-        <li><span class="tm">12:00</span><b>午餐：出島ワーフ / ツル茶ん</b><span class="sub">長崎名物土耳其飯（トルコライス）；坐窗邊睇海。</span></li>
-        <li><span class="tm">13:30</span><b>出島</b><span class="sub">復原的荷蘭商館，全程平地、有長椅；¥520</span></li>
-        <li><span class="tm">15:00</span><b>グラバー園（體力許可才去）</b><span class="sub">有「動く歩道」電動步道同上山斜路，但仍多斜路；建議用第 2 ゲート入</span><span class="note">如果長者唔想行，可以留在出島ワーフ飲咖啡，或者去大浦天主堂外圍影相就夠。</span></li>
-        <li><span class="tm">16:30</span><b>眼鏡橋</b><span class="sub">橋面平坦，行到橋中間影相就夠；落河邊石階可以唔落。</span></li>
-        <li><span class="tm">17:30</span><b>浜町商店街 · 晚餐</b><span class="sub">カステラ、買手信；晚餐在附近解決，唔使再揸車。</span></li>
+        <li><span class="tm">09:00</span><b>酒店出發 → 長崎港</b><span class="sub">泊縣營常盤停車場，行 3 分鐘到碼頭。</span><span class="drive">🚗 10 分</span></li>
+        <li><span class="tm">09:45</span><b>シーマン商会 10:30 班（集合）</b><span class="sub">開船前 30 分鐘到；10:30 出航、13:00 返港（2.5 小時）</span><span class="note">¥3,900＋端島設施費 ¥310。揀 10:30 班就唔使 8 點起身；如果滿咗，改やまさ 09:00 班（要 08:15 出門口）。</span></li>
+        <li><span class="tm">10:30</span><b>出航 → 軍艦島（端島）</b><span class="sub">船上導覽、海上望三菱長崎造船廠、軍艦島全景</span><span class="note">⚠️ 上陸碼頭有 <b>10–27 級樓梯</b>（視潮汐），島內參觀路線本身無障礙；行得慢可以扶實欄杆，職員會幫。真係唔想上落就揀「船內待機」只週遊。</span></li>
+        <li><span class="tm">13:00</span><b>返港</b><span class="sub">上陸與否視海象，船公司會即場通知；甲板風大，長者留船艙。</span></li>
+        <li><span class="tm">13:15</span><b>午餐：出島ワーフ / ツル茶ん</b><span class="sub">長崎名物土耳其飯（トルコライス）；坐窗邊睇海。</span></li>
+        <li><span class="tm">14:30</span><b>出島</b><span class="sub">復原的荷蘭商館，全程平地、有長椅；¥520</span></li>
+        <li><span class="tm">15:45</span><b>グラバー園（體力許可才去）</b><span class="sub">有「動く歩道」電動步道同上山斜路，但仍多斜路；建議用第 2 ゲート入</span><span class="note">如果長者唔想行，可以留在出島ワーフ飲咖啡，或者去大浦天主堂外圍影相就夠。</span></li>
+        <li><span class="tm">17:00</span><b>眼鏡橋</b><span class="sub">橋面平坦，行到橋中間影相就夠；落河邊石階可以唔落。</span></li>
+        <li><span class="tm">17:45</span><b>浜町商店街 · 晚餐</b><span class="sub">カステラ、買手信；晚餐在附近解決，唔使再揸車。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">Plan B</span>上午欠航 → 即場改下午班（13:00 / 14:00）；全日停航 → 12/10 早上 10:30 シーマン商会補飛，下午才去久留米。另一個選擇：軍艦島デジタルミュージアム（室內、有電梯）。</div>
+      <div class="day-foot"><span class="lbl">Plan B</span>10:30 班欠航 → 即場改 13:40 シーマン／14:00 軍艦島クルーズ；全日停航 → 12/10 早上 10:30 補飛，下午才去久留米。另一個選擇：軍艦島デジタルミュージアム（室內、有電梯）。</div>
     </div>
   </article>
 
@@ -733,6 +763,7 @@
       <div class="day-top"><h3>柳川川下り · 久留米</h3><span class="theme">輕鬆日 · 約 70 km</span></div>
       <div class="tags"><span class="tag t-food">美食</span><span class="tag t-nature">水鄉</span><span class="tag t-shop">購物</span></div>
       <ul class="tl">
+        <li><span class="tm">09:00</span><b>久留米出發</b><span class="sub">行 208 号線去柳川，沿途田園風景。</span><span class="drive">🚗 30 分</span></li>
         <li><span class="tm">09:30</span><b>柳川 川下り（松月乗船場）</b><span class="sub">約 70 分鐘，¥2,000 左右；冬天有被爐船（こたつ舟）</span><span class="note">訂位時講明有長者：要求「腰掛け座椅子」同船員扶上落船（上落約 2–3 級）。貸切船有軟垫座位，最舒服。</span></li>
         <li><span class="tm">11:45</span><b>午餐：鰻魚せいろ蒸し</b><span class="sub">若松屋、川よし；柳川名物，¥3,000–4,000</span></li>
         <li><span class="tm">13:15</span><b>河岸散步 / 北原白秋生家（可選）</b><span class="sub">平地、樹蔭多；唔想行就坐喺河邊休息。</span></li>
@@ -756,7 +787,7 @@
       <div class="day-top"><h3>鳥栖 Outlet · 機場</h3><span class="theme">購物 · 還車 · 離開</span></div>
       <div class="tags"><span class="tag t-shop">購物</span><span class="tag t-move">離開</span></div>
       <ul class="tl">
-        <li><span class="tm">09:00</span><b>久留米出發 → 鳥栖プレミアム・アウトレット</b><span class="sub">10:00 開門，泊車免費。</span><span class="drive">🚗 20 分</span></li>
+        <li><span class="tm">09:40</span><b>久留米出發 → 鳥栖プレミアム・アウトレット</b><span class="sub">10:00 開門，早到泊車免費；唔使趕。</span><span class="drive">🚗 20 分</span></li>
         <li><span class="tm">12:00</span><b>午餐：outlet food court 或機場</b></li>
         <li><span class="tm">13:30</span><b>機場還車</b><span class="sub">預留 60 分鐘：加滿油、驗車、交 ETC 卡。</span><span class="drive">🚗 30 分</span></li>
         <li><span class="tm">15:00</span><b>機場 check-in · 免稅店</b><span class="sub">福岡機場國際線細，但 12 月人多，預留 2 小時。</span></li>
@@ -765,14 +796,69 @@
     </div>
   </article>
 
-  <!-- 加插選項 -->
-  <div class="callout" style="margin-top:6px">
-    <b>想加插（全部平坦或室內，唔使行樓梯）：</b>
-    teamLab Forest 福岡（室內數碼藝術，2–3 小時，落雨最啱）·
-    LaLaport 福岡 實物大 ν Gundam（免費、平地）·
-    小倉 旦過市場（門司港回程順路）·
-    日田 豆田町＋進撃の巨人ミュージアム（平坦江戶老街，久留米 1 小時）·
-    長崎 出島ワーフ 夜景
+  <!-- ===== 行程選項 ===== -->
+  <div id="options" style="padding-top:38px">
+    <div class="sec-head">
+      <span class="num">03+</span>
+      <h2>行程選項 · 你揀</h2>
+      <span class="sub">撳「加入」會記住 · 全部零樓梯或極少</span>
+    </div>
+    <div class="rule"></div>
+
+    <div class="opt-bar">
+      <div>已選 <b id="opt-count">0</b> 項 <span id="opt-list" style="color:var(--ink-3)"></span></div>
+      <button class="btn ghost" onclick="resetOpts()">清除</button>
+    </div>
+
+    <div class="opt-grid">
+      <div class="opt" data-k="teamlab">
+        <div class="opt-top"><span>Day 1 下午 / 落雨日</span><span class="opt-fit">室內 · 零樓梯</span></div>
+        <h4>teamLab Forest 福岡</h4>
+        <p>沉浸式數碼藝術森林，室內行、有座位；落雨或長者攰嘅後備節目。博多出發 25 分鐘。</p>
+        <div class="opt-meta">2–3 小時 · 約 ¥2,000–3,000 · 博多 25 分</div>
+        <button class="btn opt-btn" data-k="teamlab">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="gundam">
+        <div class="opt-top"><span>Day 1 或 Day 8</span><span class="opt-fit">室內外 · 零樓梯</span></div>
+        <h4>LaLaport 福岡 · 實物大 ν Gundam</h4>
+        <p>24 米高實物大鋼彈＋購物中心，行到攰有餐廳同座位；離機場 20 分鐘，好適合頭尾兩日。</p>
+        <div class="opt-meta">1.5 小時 · 免費入場 · 機場 20 分</div>
+        <button class="btn opt-btn" data-k="gundam">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="kokura">
+        <div class="opt-top"><span>Day 3 回程順路</span><span class="opt-fit">平地 · 有蓋</span></div>
+        <h4>小倉 旦過市場 ＋ 魚町銀天街</h4>
+        <p>昭和感市場＋有蓋商店街，買漬物、試小倉名物；行得慢都舒服，門司港返博多順路。</p>
+        <div class="opt-meta">1.5 小時 · 免費 · 門司港 25 分</div>
+        <button class="btn opt-btn" data-k="kokura">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="hita">
+        <div class="opt-top"><span>Day 7 取代柳川</span><span class="opt-fit">平地老街</span></div>
+        <h4>日田 豆田町 ＋ 進撃の巨人ミュージアム</h4>
+        <p>江戶天領商家老街，350 米平路；作者故鄉限定博物館。久留米出發 1 小時，適合唔想上落船嘅一日。</p>
+        <div class="opt-meta">半日 · 博物館另收費 · 久留米 1 小時</div>
+        <button class="btn opt-btn" data-k="hita">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="kyuhaku">
+        <div class="opt-top"><span>Day 4 加長太宰府</span><span class="opt-fit">室內 · 電扶梯</span></div>
+        <h4>九州国立博物館</h4>
+        <p>太宰府站旁，室內全程電扶梯＋電梯；亞洲文化交流館藏，落雨最啱。長者可以坐低睇重點展品。</p>
+        <div class="opt-meta">1.5 小時 · 約 ¥700 · 太宰府站 5 分</div>
+        <button class="btn opt-btn" data-k="kyuhaku">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="dejima">
+        <div class="opt-top"><span>Day 5 黃昏</span><span class="opt-fit">海邊平地 · 零樓梯</span></div>
+        <h4>出島ワーフ ＋ 水辺の森公園</h4>
+        <p>長崎港海邊晚餐＋夜景，全程平地；唔使再揸車，食完行返酒店都得。</p>
+        <div class="opt-meta">1 小時 · 免費 · 長崎站 10 分</div>
+        <button class="btn opt-btn" data-k="dejima">加入行程</button>
+      </div>
+    </div>
   </div>
 </section>
 <section id="stay">
@@ -1159,6 +1245,42 @@
     try { localStorage.removeItem(KEY); } catch(e) {}
     refresh();
   };
+
+  /* ---------- 行程選項（會記住） ---------- */
+  var OPT_KEY = 'fukuoka2026.options.v1';
+  var optState = {};
+  try { optState = JSON.parse(localStorage.getItem(OPT_KEY) || '{}'); } catch(e) { optState = {}; }
+  var optBtns = Array.prototype.slice.call(document.querySelectorAll('.opt-btn'));
+
+  function optRefresh(){
+    var names = [];
+    optBtns.forEach(function(b){
+      var k = b.getAttribute('data-k');
+      var card = b.closest('.opt');
+      var on = !!optState[k];
+      card.classList.toggle('on', on);
+      b.textContent = on ? '已加入 ✓' : '加入行程';
+      if(on) names.push(card.querySelector('h4').textContent);
+    });
+    document.getElementById('opt-count').textContent = names.length;
+    document.getElementById('opt-list').textContent = names.length ? '：' + names.join('、') : '';
+  }
+
+  optBtns.forEach(function(b){
+    b.addEventListener('click', function(){
+      var k = b.getAttribute('data-k');
+      if(optState[k]) { delete optState[k]; } else { optState[k] = true; }
+      try { localStorage.setItem(OPT_KEY, JSON.stringify(optState)); } catch(e) {}
+      optRefresh();
+    });
+  });
+
+  window.resetOpts = function(){
+    optState = {};
+    try { localStorage.removeItem(OPT_KEY); } catch(e) {}
+    optRefresh();
+  };
+  optRefresh();
 
   /* ---------- 導航高亮 ---------- */
   var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a[href^="#"]'));
