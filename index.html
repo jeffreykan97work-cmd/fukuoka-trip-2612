@@ -108,7 +108,7 @@
 
   /* ---------- ROUTE ---------- */
   .route{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+    display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
     background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
     padding:22px 20px;box-shadow:var(--shadow);
   }
@@ -264,7 +264,7 @@
   .opt.on .opt-btn{background:var(--vermilion);border-color:var(--vermilion)}
 
   /* ---------- STAY ---------- */
-  .stay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .stay-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
   .stay{
     background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
     padding:22px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;
@@ -376,8 +376,8 @@
   .top-note b{color:#4a3a18}
 
   @media(max-width:860px){
-    .route{grid-template-columns:1fr 1fr}
-    .stop:nth-child(2):after{display:none}
+    .route{grid-template-columns:1fr}
+    .stop:not(:last-child):after{display:none}
     .logic,.stay-grid,.groups,.info-grid,.budget,.opt-grid{grid-template-columns:1fr}
     .airbnb-check ul{grid-template-columns:1fr}
     .day{grid-template-columns:1fr}
@@ -435,9 +435,9 @@
     </g>
   </svg>
   <div class="wrap">
-    <div class="kicker"><i></i>FUKUOKA · NAGASAKI · KURUME</div>
+    <div class="kicker"><i></i>FUKUOKA · YUFUIN · NAGASAKI · KURUME</div>
     <h1><small>紅葉與海島之旅</small>福岡・九州北部<br>8 日 7 夜</h1>
-    <p class="lead">四個大人、三個住宿基地、一部車。由博多出發，經糸島、門司港、長崎軍艦島，再折返久留米。同行有長者，所以行程以「少樓梯、多坐低、每個景點留休息位」為原則；紅葉只留兩個最易行的點，其餘換成特色景點。</p>
+    <p class="lead">四個大人、四個住宿基地、一部車。博多出發，經糸島、門司港，12/8 上由布院住一晚溫泉，再落太宰府、長崎軍艦島，最後久留米返機場。同行有長者，全程以「少樓梯、多坐低」為原則。</p>
     <div class="dates">
       <span class="big">2026.12.05</span><span class="dash"></span><span class="big">12.12</span>
       <span style="font-size:12px;letter-spacing:.2em;color:#b9c8d6">SAT — SAT</span>
@@ -445,7 +445,7 @@
     <div class="chips">
       <span class="chip">4 成人 · 有長者</span>
       <span class="chip">自駕 · 8 人座</span>
-      <span class="chip">3 基地 / 7 晚</span>
+      <span class="chip">4 基地 / 7 晚</span>
       <span class="chip">軍艦島 + 原爆資料館</span>
       <span class="chip">紅葉 2 點</span>
       <span class="chip">每日 09:00 出發</span>
@@ -476,7 +476,7 @@
   <div class="sec-head">
     <span class="num">01</span>
     <h2>路線思路</h2>
-    <span class="sub">三基地 · 唔走回頭路</span>
+    <span class="sub">四基地 · 順時針一圈</span>
   </div>
   <div class="rule"></div>
 
@@ -484,33 +484,38 @@
     <div class="stop">
       <div class="k">BASE 01</div>
       <div class="n">博多</div>
-      <div class="t">12/5 – 12/8 · 3 晚<br>糸島 / 門司港 / 市區</div>
+      <div class="t">12/5 – 12/8 · 3 晚<br>糸島 / 門司港 / 紅葉</div>
     </div>
     <div class="stop">
       <div class="k">BASE 02</div>
-      <div class="n">長崎</div>
-      <div class="t">12/8 – 12/10 · 2 晚<br>軍艦島 / 原爆 / 夜景</div>
+      <div class="n">由布院</div>
+      <div class="t">12/8 – 12/9 · 1 晚<br>溫泉 / 湯の坪 / 金鱗湖</div>
     </div>
     <div class="stop">
       <div class="k">BASE 03</div>
+      <div class="n">長崎</div>
+      <div class="t">12/9 – 12/10 · 1 晚<br>原爆 / 軍艦島 / 夜景</div>
+    </div>
+    <div class="stop">
+      <div class="k">BASE 04</div>
       <div class="n">久留米</div>
-      <div class="t">12/10 – 12/12 · 2 晚<br>柳川 / 太宰府 / 鳥栖</div>
+      <div class="t">12/10 – 12/12 · 2 晚<br>柳川 / 鳥栖 Outlet</div>
     </div>
     <div class="stop">
       <div class="k">EXIT</div>
       <div class="n">福岡機場</div>
-      <div class="t">12/12 · 30–45 分鐘車程</div>
+      <div class="t">12/12 · 45 分鐘車程</div>
     </div>
   </div>
 
   <div class="logic">
     <div class="item">
-      <b>① 三角形走法，唔重複</b>
-      <p>博多向西南去長崎，再向東北折返久留米，最後 30 分鐘入機場。全程只有一次長途搬酒店（12/10），其餘日子即日來回。</p>
+      <b>① 四個基地，順時針一圈</b>
+      <p>博多 → 由布院（12/8 住溫泉）→ 太宰府 → 長崎 → 久留米 → 機場，兜一個圈唔走回頭路；長途搬酒店集中在 12/8、12/9、12/10 三日。</p>
     </div>
     <div class="item">
-      <b>② 軍艦島排第 5 日</b>
-      <p>冬季海象最不穩，安排在旅程中段：前有 12/8 下午、後有 12/10 早上可以做補航，唔會一取消就玩完。</p>
+      <b>② 軍艦島排 12/10 早上</b>
+      <p>長崎只住 1 晚，冇第二朝可以補飛，所以訂 10:30 班；如果欠航，即場改同日 13:40 班，之後直接揸去久留米（2 小時）。</p>
     </div>
     <div class="item">
       <b>③ 紅葉只留兩個易行點</b>
@@ -525,7 +530,7 @@
 
   <div class="top-note" style="background:#f1f7f2;border-color:#d8e8db">
     <span>🕘</span>
-    <div><b>每日 09:00 出門口：</b>全部日程已重排，冇一日要 8 點起身。Day 5 軍艦島改搭 10:30 班（唔使趕 09:00 船），Day 8 視航班再定。</div>
+    <div><b>每日 09:00 出門口：</b>全部日程已重排，冇一日要 8 點起身。Day 6 軍艦島改搭 10:30 班（唔使趕 09:00 船），Day 8 視航班再定。</div>
   </div>
 </section>
 
@@ -558,7 +563,7 @@
     </div>
 
     <div class="koyo-row">
-      <div class="name"><b>太宰府天満宮</b>太宰府 · 12/8 去 · 平坦＋輪椅</div>
+      <div class="name"><b>太宰府天満宮</b>太宰府 · 12/9 去 · 平坦＋輪椅</div>
       <div class="track">
         <div class="bar" style="left:28%;width:44%;background:#d9a05b"></div>
         <div class="bar peak" style="left:40%;width:26%;background:#b23b2e"></div>
@@ -576,7 +581,7 @@
     </div>
 
     <div class="koyo-note">
-      ⚠️ 只留兩個點，全部平坦：<b>舞鶴公園・大濠公園</b>（12/7，銀杏＋紅葉，長椅多）同 <b>太宰府天満宮</b>（12/8，紅葉＋銀杏，境內免費借輪椅、有無障礙參拜路線）。12 月屬尾段，樹上未必最紅；出發前 3 日查 <b>tenki.jp/koyo</b>。如果舞鶴落葉，改 <b>友泉亭公園</b>（平坦日式庭園）。山寺（千如寺、大興善寺）樓梯多，今次直接唔去。
+      ⚠️ 只留兩個點，全部平坦：<b>舞鶴公園・大濠公園</b>（12/7，銀杏＋紅葉，長椅多）同 <b>太宰府天満宮</b>（12/9，紅葉＋銀杏，境內免費借輪椅、有無障礙參拜路線）。12 月屬尾段，樹上未必最紅；出發前 3 日查 <b>tenki.jp/koyo</b>。如果舞鶴落葉，改 <b>友泉亭公園</b>（平坦日式庭園）。山寺（千如寺、大興善寺）樓梯多，今次直接唔去。
     </div>
   </div>
 </section>
@@ -674,61 +679,57 @@
   </article>
 
   <!-- DAY 4 -->
-  <article class="day" id="day4" data-tags="koyo reki night move">
+  <article class="day" id="day4" data-tags="nature food move shop">
     <div class="day-side">
       <div class="dow">TUE</div>
       <div class="date">12/08</div>
       <div class="mon">DAY 4</div>
-      <div class="base">住 長崎<br>2 晚</div>
+      <div class="base">住 由布院<br>1 晚溫泉</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>太宰府紅葉 → 長崎 · 原爆與夜景</h3><span class="theme">紅葉 #1 · 搬基地 · 約 200 km</span></div>
-      <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-reki">歷史</span><span class="tag t-night">夜景</span><span class="tag t-move">移動</span></div>
+      <div class="day-top"><h3>博多 → 由布院 · 溫泉一晚</h3><span class="theme">搬基地 · 約 130 km · 全日平地</span></div>
+      <div class="tags"><span class="tag t-nature">溫泉</span><span class="tag t-food">美食</span><span class="tag t-move">移動</span></div>
       <ul class="tl">
-        <li><span class="tm">09:00</span><b>博多出發</b><span class="sub">避開返工車潮，太宰府 35 分鐘就到。</span><span class="drive">🚗 35 分</span></li>
-        <li><span class="tm">09:35</span><b>太宰府天満宮（紅葉）</b><span class="sub">紅葉＋銀杏、參道、飛梅；境內免費借輪椅，有無障礙參拜路線</span><span class="note">行得慢都夠時間；用無障礙路線繞過太鼓橋石階，本殿前有少量梯級，喺下面參拜都可以。</span></li>
-        <li><span class="tm">10:50</span><b>參道 梅ヶ枝餅 · 咖啡休息</b><span class="sub">現烤梅ヶ枝餅，坐低食；參道石畳但無段差。</span></li>
-        <li><span class="tm">11:15</span><b>九州国立博物館（可選）</b><span class="sub">室內、全程電扶梯＋電梯；落雨就入嚟。</span><span class="note">長者唔想行可以留喺參道茶屋等。</span></li>
-        <li><span class="tm">12:15</span><b>午餐：太宰府參道</b><span class="sub">蕎麥、天婦羅、梅ヶ枝餅。</span></li>
-        <li><span class="tm">13:10</span><b>出發長崎</b><span class="sub">九州道 → 長崎道，中途金立 SA 休息。</span><span class="drive">🚗 1 小時 50 分</span></li>
-        <li><span class="tm">15:00</span><b>長崎原爆資料館</b><span class="sub">¥200，約 1 小時；全館電梯、無障礙</span><span class="note">2026/11/24 起 C 區「核兵器のない世界」維修關閉至 2027/3，A、B 區照開。</span></li>
-        <li><span class="tm">16:15</span><b>平和公園 · 爆心地公園</b><span class="sub">平地，公園內有長椅；唔使行上浦上天主堂斜路。</span></li>
-        <li><span class="tm">16:40</span><b>酒店 check-in</b><span class="sub">放低行李，休息 40 分鐘。</span></li>
-        <li><span class="tm">17:30</span><b>稻佐山纜車 · 山頂夜景</b><span class="sub">纜車＋山頂室內展望台，全程唔使行樓梯；來回約 ¥1,250</span><span class="note">日落 17:10、夜景 18:00 後；山頂風大，比市區低 3–4°C。</span></li>
-        <li><span class="tm">19:15</span><b>晚餐：思案橋 / 浜町</b><span class="sub">海鮮居酒屋、長崎和牛。</span></li>
+        <li><span class="tm">09:00</span><b>博多出發</b><span class="sub">九州道 → 大分自動車道 → 由布院 IC。</span><span class="drive">🚗 2 小時 15 分</span></li>
+        <li><span class="tm">11:15</span><b>由布院到著 · 午餐</b><span class="sub">由布院名物 とり天、手打蕎麥；泊湯の坪停車場（¥500–1,000）</span></li>
+        <li><span class="tm">12:30</span><b>湯の坪街道散策</b><span class="sub">平坦 1.2 公里，兩旁小店、甜品、咖啡；行到攰隨時坐低</span><span class="note">平日人少好多；長者可以行半條街就入咖啡店等。</span></li>
+        <li><span class="tm">14:00</span><b>金鱗湖</b><span class="sub">環湖一周 20 分鐘，全程平路；湖邊有足湯同咖啡</span><span class="note">12 月清晨有晨霧，下午光線柔和一樣好影。</span></li>
+        <li><span class="tm">15:00</span><b>溫泉旅館 check-in</b><span class="sub">一泊兩食；訂房時要求「私人風呂」或「家庭風呂」</span><span class="note">長者唔使去大浴場同人迫，房內或包場最舒服。</span></li>
+        <li><span class="tm">16:00</span><b>泡湯 · 休息</b><span class="sub">由布院溫泉屬單純泉，刺激性低，適合長者。</span></li>
+        <li><span class="tm">18:00</span><b>晚餐：旅館會席料理</b><span class="sub">豐後牛、地雞、季節野菜；食完早啲休息。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">體力</span>太宰府平坦＋可借輪椅；原爆資料館全電梯；稻佐山纜車直上。今日係紅葉重點，行得慢都夠時間。</div>
+      <div class="day-foot"><span class="lbl">體力</span>全日平地；湯の坪街道人多，行得慢都 OK。由布院 12 月 0–8°C，帶保暖內衣同頸巾。</div>
     </div>
   </article>
 
   <!-- DAY 5 -->
-  <article class="day" id="day5" data-tags="heritage reki food">
+  <article class="day" id="day5" data-tags="koyo reki night move">
     <div class="day-side">
       <div class="dow">WED</div>
       <div class="date">12/09</div>
       <div class="mon">DAY 5</div>
-      <div class="base">住 長崎<br>重點日</div>
+      <div class="base">住 長崎<br>1 晚</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>軍艦島 · 長崎市內</h3><span class="theme">世界遺產 · 半日船 ＋ 市內平地</span></div>
-      <div class="tags"><span class="tag t-heritage">世界遺產</span><span class="tag t-reki">歷史</span><span class="tag t-food">美食</span></div>
+      <div class="day-top"><h3>由布院 → 太宰府紅葉 → 長崎</h3><span class="theme">紅葉 #2 · 搬基地 · 約 250 km</span></div>
+      <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-reki">歷史</span><span class="tag t-night">夜景</span><span class="tag t-move">移動</span></div>
       <ul class="tl">
-        <li><span class="tm">09:00</span><b>酒店出發 → 長崎港</b><span class="sub">泊縣營常盤停車場，行 3 分鐘到碼頭。</span><span class="drive">🚗 10 分</span></li>
-        <li><span class="tm">09:45</span><b>シーマン商会 10:30 班（集合）</b><span class="sub">開船前 30 分鐘到；10:30 出航、13:00 返港（2.5 小時）</span><span class="note">¥3,900＋端島設施費 ¥310。揀 10:30 班就唔使 8 點起身；如果滿咗，改やまさ 09:00 班（要 08:15 出門口）。</span></li>
-        <li><span class="tm">10:30</span><b>出航 → 軍艦島（端島）</b><span class="sub">船上導覽、海上望三菱長崎造船廠、軍艦島全景</span><span class="note">⚠️ 上陸碼頭有 <b>10–27 級樓梯</b>（視潮汐），島內參觀路線本身無障礙；行得慢可以扶實欄杆，職員會幫。真係唔想上落就揀「船內待機」只週遊。</span></li>
-        <li><span class="tm">13:00</span><b>返港</b><span class="sub">上陸與否視海象，船公司會即場通知；甲板風大，長者留船艙。</span></li>
-        <li><span class="tm">13:15</span><b>午餐：出島ワーフ / ツル茶ん</b><span class="sub">長崎名物土耳其飯（トルコライス）；坐窗邊睇海。</span></li>
-        <li><span class="tm">14:30</span><b>出島</b><span class="sub">復原的荷蘭商館，全程平地、有長椅；¥520</span></li>
-        <li><span class="tm">15:45</span><b>グラバー園（體力許可才去）</b><span class="sub">有「動く歩道」電動步道同上山斜路，但仍多斜路；建議用第 2 ゲート入</span><span class="note">如果長者唔想行，可以留在出島ワーフ飲咖啡，或者去大浦天主堂外圍影相就夠。</span></li>
-        <li><span class="tm">17:00</span><b>眼鏡橋</b><span class="sub">橋面平坦，行到橋中間影相就夠；落河邊石階可以唔落。</span></li>
-        <li><span class="tm">17:45</span><b>浜町商店街 · 晚餐</b><span class="sub">カステラ、買手信；晚餐在附近解決，唔使再揸車。</span></li>
+        <li><span class="tm">09:00</span><b>由布院出發</b><span class="sub">大分自動車道 → 九州道 → 太宰府 IC。</span><span class="drive">🚗 1 小時 45 分</span></li>
+        <li><span class="tm">10:45</span><b>太宰府天満宮（紅葉）</b><span class="sub">紅葉＋銀杏、參道、飛梅；境內免費借輪椅，有無障礙參拜路線</span><span class="note">用無障礙路線繞過太鼓橋石階；本殿前有少量梯級，喺下面參拜都可以。</span></li>
+        <li><span class="tm">12:00</span><b>午餐：太宰府參道</b><span class="sub">蕎麥、天婦羅、梅ヶ枝餅；坐低休息 1 小時。</span></li>
+        <li><span class="tm">13:00</span><b>出發長崎</b><span class="sub">九州道 → 長崎道，中途金立 SA 休息。</span><span class="drive">🚗 1 小時 50 分</span></li>
+        <li><span class="tm">14:55</span><b>長崎原爆資料館</b><span class="sub">¥200，約 1 小時；全館電梯、無障礙</span><span class="note">2026/11/24 起 C 區「核兵器のない世界」維修關閉至 2027/3，A、B 區照開。</span></li>
+        <li><span class="tm">16:10</span><b>平和公園 · 爆心地公園</b><span class="sub">平地，公園內有長椅；唔使行上浦上天主堂斜路。</span></li>
+        <li><span class="tm">16:40</span><b>酒店 check-in</b><span class="sub">放低行李，休息 40 分鐘。</span></li>
+        <li><span class="tm">17:30</span><b>稻佐山纜車 · 山頂夜景</b><span class="sub">纜車＋山頂室內展望台，全程唔使行樓梯；來回約 ¥1,250</span><span class="note">日落 17:10、夜景 18:00 後；山頂風大，比市區低 3–4°C。</span></li>
+        <li><span class="tm">19:00</span><b>晚餐：思案橋 / 浜町</b><span class="sub">海鮮居酒屋、長崎和牛。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">Plan B</span>10:30 班欠航 → 即場改 13:40 シーマン／14:00 軍艦島クルーズ；全日停航 → 12/10 早上 10:30 補飛，下午才去久留米。另一個選擇：軍艦島デジタルミュージアム（室內、有電梯）。</div>
+      <div class="day-foot"><span class="lbl">體力</span>今日揸車約 3.5 小時，但中間太宰府休息足 2 小時；太宰府平坦＋可借輪椅，原爆館全電梯，稻佐山纜車直上。</div>
     </div>
   </article>
 
   <!-- DAY 6 -->
-  <article class="day" id="day6" data-tags="shop food move">
+  <article class="day" id="day6" data-tags="heritage reki food move">
     <div class="day-side">
       <div class="dow">THU</div>
       <div class="date">12/10</div>
@@ -736,18 +737,18 @@
       <div class="base">住 久留米<br>2 晚</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>長崎新名所 → 久留米</h3><span class="theme">約 150 km · 輕鬆日</span></div>
-      <div class="tags"><span class="tag t-shop">新名所</span><span class="tag t-food">美食</span><span class="tag t-move">移動</span></div>
+      <div class="day-top"><h3>軍艦島 → 久留米</h3><span class="theme">世界遺產 · 半日船 ＋ 2 小時車</span></div>
+      <div class="tags"><span class="tag t-heritage">世界遺產</span><span class="tag t-reki">歷史</span><span class="tag t-food">美食</span><span class="tag t-move">移動</span></div>
       <ul class="tl">
-        <li><span class="tm">09:00</span><b>長崎酒店 check-out → 長崎スタジアムシティ</b><span class="sub">2024 年 10 月開幕的新地標：球場、商場、約 40 間餐廳；室內＋平地</span><span class="drive">🚗 10 分</span><span class="note">免費入場；唔好行上球場看台高層，地面商場已經好好行。</span></li>
-        <li><span class="tm">11:00</span><b>午餐：スタジアムシティ 內</b><span class="sub">長崎海鮮、壽司、漢堡；坐低慢慢食。</span></li>
-        <li><span class="tm">12:00</span><b>出發久留米</b><span class="sub">長崎道 → 九州道，中途金立 SA 休息。</span><span class="drive">🚗 2 小時</span></li>
-        <li><span class="tm">14:00</span><b>久留米 Airbnb check-in</b><span class="sub">放低行李，休息 30 分鐘；順便洗一批衫。</span></li>
-        <li><span class="tm">15:00</span><b>久留米市美術館（舊石橋美術館）</b><span class="sub">室內、平地、有電梯；雪舟、青木繁館藏</span><span class="note">如果閉館，改去久留米城跡／六角堂廣場散步。</span></li>
-        <li><span class="tm">16:30</span><b>水天宮 · 六角堂廣場</b><span class="sub">平地參道，樹蔭多；旁邊有咖啡店。</span></li>
+        <li><span class="tm">09:00</span><b>長崎酒店 check-out → 長崎港</b><span class="sub">行李放車尾箱；泊縣營常盤停車場，行 3 分鐘到碼頭。</span><span class="drive">🚗 10 分</span></li>
+        <li><span class="tm">09:45</span><b>シーマン商会 10:30 班（集合）</b><span class="sub">開船前 30 分鐘到；10:30 出航、13:00 返港（2.5 小時）</span><span class="note">¥3,900＋端島設施費 ¥310。長崎只住 1 晚，冇第二朝補飛，所以今日一定要搭到。</span></li>
+        <li><span class="tm">10:30</span><b>出航 → 軍艦島（端島）</b><span class="sub">船上導覽、海上望三菱長崎造船廠、軍艦島全景</span><span class="note">⚠️ 上陸碼頭有 <b>10–27 級樓梯</b>（視潮汐），島內參觀路線本身無障礙；行得慢可以扶實欄杆，職員會幫。真係唔想上落就揀「船內待機」只週遊。</span></li>
+        <li><span class="tm">13:00</span><b>返港 · 午餐</b><span class="sub">出島ワーフ / ツル茶ん，坐窗邊睇海；食完直接上高速。</span></li>
+        <li><span class="tm">14:15</span><b>出發久留米</b><span class="sub">長崎道 → 九州道，中途金立 SA 休息 15 分鐘。</span><span class="drive">🚗 2 小時</span></li>
+        <li><span class="tm">16:15</span><b>久留米 Airbnb check-in</b><span class="sub">放低行李，休息；順便洗一批衫。</span></li>
         <li><span class="tm">18:00</span><b>晚餐：大砲ラーメン / 久留米燒鳥</b><span class="sub">久留米是九州豚骨拉麵發源地；とりかわ 是名物。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">體力</span>今日係緩衝日：一個室內新景點＋一個平地神社，揸車 2 小時中間有 SA 休息。大興善寺樓梯多，已經剔走。</div>
+      <div class="day-foot"><span class="lbl">Plan B</span>10:30 欠航 → 即場改 13:40 班，16:10 返港，17:00 出發，19:00 到久留米；再唔得就只有 12/11 由久留米揸返長崎（單程 2 小時），唔建議。室內後備：軍艦島デジタルミュージアム。</div>
     </div>
   </article>
 
@@ -844,7 +845,7 @@
       </div>
 
       <div class="opt" data-k="kyuhaku">
-        <div class="opt-top"><span>Day 4 加長太宰府</span><span class="opt-fit">室內 · 電扶梯</span></div>
+        <div class="opt-top"><span>Day 5 加長太宰府</span><span class="opt-fit">室內 · 電扶梯</span></div>
         <h4>九州国立博物館</h4>
         <p>太宰府站旁，室內全程電扶梯＋電梯；亞洲文化交流館藏，落雨最啱。長者可以坐低睇重點展品。</p>
         <div class="opt-meta">1.5 小時 · 約 ¥700 · 太宰府站 5 分</div>
@@ -864,8 +865,8 @@
 <section id="stay">
   <div class="sec-head">
     <span class="num">04</span>
-    <h2>三個基地 · Airbnb 建議</h2>
-    <span class="sub">整間 · 4 人 · 約 ¥20,000／晚</span>
+    <h2>四個基地 · Airbnb／溫泉旅館</h2>
+    <span class="sub">博多 3 晚 · 由布院 1 晚 · 長崎 1 晚 · 久留米 2 晚</span>
   </div>
   <div class="rule"></div>
 
@@ -885,8 +886,21 @@
 
     <div class="stay">
       <div class="city">BASE 02</div>
+      <h4>由布院</h4>
+      <div class="nights">12/8 – 12/9 · 1 晚</div>
+      <ul>
+        <li><b>住邊好</b><br>湯の坪街道／由布院駅周邊，行去金鱗湖 15 分鐘；多數溫泉旅館有接送。</li>
+        <li><b>揀咩類型</b><br>一泊兩食溫泉旅館（私人風呂），或 Airbnb 整間連溫泉；4 人建議 2 間和室。</li>
+        <li><b>一定要有</b><br>私人／家庭風呂（長者唔使同人迫）、房內暖氣、泊車位。</li>
+        <li><b>注意</b><br>12 月 0–8°C；部分旅館房間冇淋浴、只可以去大浴場，訂前問清楚。</li>
+        <li class="price">參考：旅館一泊兩食 ¥30,000–45,000／人；Airbnb 整間 ¥30,000–45,000／晚</li>
+      </ul>
+    </div>
+
+    <div class="stay">
+      <div class="city">BASE 03</div>
       <h4>長崎</h4>
-      <div class="nights">12/8 – 12/10 · 2 晚</div>
+      <div class="nights">12/9 – 12/10 · 1 晚</div>
       <ul>
         <li><b>住邊好</b><br>長崎駅周辺／出島／浜町。去長崎港 10 分鐘、原爆資料館 15 分鐘。</li>
         <li><b>搵咩類型</b><br>2LDK 公寓或一戶建；長崎坡多，揀平地或近電車站。</li>
@@ -897,7 +911,7 @@
     </div>
 
     <div class="stay">
-      <div class="city">BASE 03</div>
+      <div class="city">BASE 04</div>
       <h4>久留米</h4>
       <div class="nights">12/10 – 12/12 · 2 晚</div>
       <ul>
@@ -941,7 +955,8 @@
         <div class="field"><label>人數</label><input id="b-people" type="number" value="4" min="1"></div>
         <div class="field"><label>住宿晚數</label><input id="b-nights" type="number" value="7" min="0"></div>
         <div class="field"><label>住宿每晚（¥ · 整間）</label><input id="b-room" type="number" value="20000" step="1000"></div>
-        <div class="field"><label>清潔費合計（¥）</label><input id="b-clean" type="number" value="20000" step="1000"></div>
+        <div class="field"><label>由布院 1 晚（¥ · 全組）</label><input id="b-yufuin" type="number" value="40000" step="1000"></div>
+        <div class="field"><label>清潔費合計（¥ · 4 次訂房）</label><input id="b-clean" type="number" value="28000" step="1000"></div>
         <div class="field"><label>租車日數</label><input id="b-cardays" type="number" value="8" min="0"></div>
         <div class="field"><label>租車每日（¥）</label><input id="b-carrate" type="number" value="18000" step="1000"></div>
         <div class="field"><label>油費＋過路＋泊車（¥）</label><input id="b-carextra" type="number" value="33000" step="1000"></div>
@@ -958,7 +973,7 @@
         </div>
         <div class="per" id="b-per">每人 ¥0 · 約 MOP 0</div>
       </div>
-      <div class="disclaimer">粗算用，未含機票、簽證、購物退稅。住宿以整間 Airbnb ¥20,000／晚 + 一次性清潔費估算；租車以 8 人座 + ETC + 免責補償估算。12 月旺季建議早訂，價差可以好大。</div>
+      <div class="disclaimer">粗算用，未含機票、簽證、購物退稅。住宿＝6 晚 Airbnb + 由布院 1 晚（預設 ¥40,000，可改）＋ 4 次訂房清潔費；租車以 8 人座 + ETC + 免責補償估算。由布院溫泉旅館一泊兩食通常 ¥30,000–45,000／人，會貴過呢個數。</div>
     </div>
 
     <div class="panel">
@@ -990,10 +1005,11 @@
   <div class="groups">
     <div class="group">
       <h4>最急 · 一定要訂 <span class="hint">軍艦島最優先</span></h4>
-      <label class="ck"><input type="checkbox" data-k="gunkan"><span>軍艦島上陸クルーズ（12/9 上午班）<small>5 家公司：やまさ 09:00 / 軍艦島クルーズ 09:10 / シーマン 10:30。¥4,000–5,350。冬季班次少，晨班最快滿。預約時講明有長者；如用輪椅每班限 1 台，要先電話商量。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="gunkan"><span>軍艦島上陸クルーズ（12/10 10:30 班）<small>シーマン商会 10:30–13:00；¥3,900＋設施費 ¥310。長崎只住 1 晚，冇第二朝補飛，訂到先好安心。預約時講明有長者。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="car"><span>租車（12/5 機場取 · 12/12 機場還）<small>8 人座 + ETC 卡 + 免責補償（NOC）；4 人 4 件大行李，7 人車會好逼。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="hotel-f"><span>博多 Airbnb 3 晚（12/5–12/8）<small>整間 2LDK；要有平面車位（8 人座入唔到立體停車場）。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="hotel-n"><span>長崎 Airbnb 2 晚（12/8–12/10）<small>市區車位好緊張，篩選「駐車場あり」，或者先搵定附近停車場。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="hotel-y"><span>由布院溫泉旅館 1 晚（12/8）<small>一泊兩食，要求私人／家庭風呂；4 人訂 2 間和室。熱門旅館 12 月好快滿，優先訂。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="hotel-n"><span>長崎 Airbnb／酒店 1 晚（12/9–12/10）<small>只住一晚，揀近長崎港（去軍艦島 10 分鐘）＋有車位。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="hotel-k"><span>久留米 Airbnb 2 晚（12/10–12/12）<small>郊區一戶建通常免費泊車＋洗衣機，最後兩晚執行李最方便。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="idp"><span>國際駕駛執照<small>澳門交通事務局／一戶通申請；澳門車牌有效期要剩 30 日以上。日本承認澳門發出的 1949 日內瓦公約樣式 IDP。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="insurance"><span>旅遊保險（自駕、醫療、行程取消）<small>租車公司保險唔包人身，另外買。</small></span></label>
@@ -1088,7 +1104,7 @@
       <ul>
         <li>博多／天神泊車 ¥300–600／小時；Airbnb 泊車位要先問清楚尺寸同費用。</li>
         <li>長崎市區路窄、坡多，Airbnb 車位一定要先確認（平面位，唔好揀機械式）。</li>
-        <li>長崎スタジアムシティ：活動日停車場完全預約制，普通日先到先得。</li>
+        <li>由布院：湯の坪停車場 ¥500–1,000，旺季 10 點前到；溫泉旅館多數有免費泊車。</li>
         <li>太宰府周末停車場爆滿，最好 10 點前到。</li>
         <li>加油站：自助（セルフ）先付款；還車前加滿並保留單據。</li>
       </ul>
@@ -1118,8 +1134,8 @@
 
   <table class="risk">
     <tr><th style="width:170px">情況</th><th>即刻做</th></tr>
-    <tr><td>軍艦島上午欠航</td><td>即場問船公司改下午班（13:00 やまさ / 14:00 軍艦島クルーズ）；下午都停 → 改去軍艦島デジタルミュージアム（室內，有 VR 同模型）。</td></tr>
-    <tr><td>軍艦島全日停航</td><td>12/10 早上 10:30 シーマン商会補飛，下午 14:00 出發去久留米，晚上到；久留米市內行程順延到 12/11 早上。</td></tr>
+    <tr><td>軍艦島上午欠航</td><td>即場問船公司改 13:40 シーマン／14:00 軍艦島クルーズ；下午都停 → 改去軍艦島デジタルミュージアム（室內，有 VR 同模型）。</td></tr>
+    <tr><td>軍艦島全日停航</td><td>同日改 13:40 班（16:10 返港），17:00 出發，19:00 到久留米。如果連下午都停，就放棄軍艦島，改去軍艦島デジタルミュージアム，15:00 出發去久留米；唔建議 12/11 由久留米來回長崎（單程 2 小時）。</td></tr>
     <tr><td>舞鶴公園已落葉</td><td>改友泉亭公園（平坦日式庭園，紅葉＋茶室）或大濠公園（銀杏）；太宰府照去，兩個點都平坦。</td></tr>
     <tr><td>長者行到攰 / 唔想行</td><td>即場刪下一個景點，返車或找咖啡店休息；太宰府可借輪椅；唔好為趕行程逼長者行樓梯。</td></tr>
     <tr><td>落雨</td><td>室內替補：九州國立博物館（太宰府）、長崎歴史文化博物館、マリンワールド海の中道、アミュプラザ博多。</td></tr>
@@ -1159,7 +1175,7 @@
   });
 
   /* ---------- 預算計算 ---------- */
-  var ids = ['b-people','b-nights','b-room','b-clean','b-cardays','b-carrate','b-carextra','b-meal','b-ticket','b-misc','b-fx'];
+  var ids = ['b-people','b-nights','b-room','b-yufuin','b-clean','b-cardays','b-carrate','b-carextra','b-meal','b-ticket','b-misc','b-fx'];
   var defaults = {};
   ids.forEach(function(id){ defaults[id] = document.getElementById(id).value; });
 
@@ -1170,6 +1186,7 @@
     var people = Math.max(1, num('b-people'));
     var nights = num('b-nights');
     var room   = num('b-room');
+    var yufuin = num('b-yufuin');
     var clean  = num('b-clean');
     var cdays  = num('b-cardays');
     var crate  = num('b-carrate');
@@ -1179,7 +1196,7 @@
     var misc   = num('b-misc');
     var fx     = num('b-fx');
 
-    var stay = nights * room + clean;
+    var stay = Math.max(0, nights - 1) * room + yufuin + clean;
     var car  = cdays * crate + cextra;
     var eat  = people * cdays * meal;
     var tick = people * ticket;
