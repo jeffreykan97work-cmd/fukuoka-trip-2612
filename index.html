@@ -64,7 +64,7 @@
     letter-spacing:.04em;
   }
   .hero h1 small{display:block;font-size:.42em;letter-spacing:.28em;color:#cdb98f;margin-bottom:10px;font-weight:500}
-  .hero p.lead{margin:0;color:#d8e1ea;font-size:15.5px;max-width:720px}
+  .hero p.lead{margin:0;color:#d8e1ea;font-size:15.5px;max-width:760px}
   .dates{
     display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
     margin-top:26px;font-family:"Noto Serif TC",Georgia,serif;
@@ -78,6 +78,7 @@
     color:#e9eef3;letter-spacing:.05em;
   }
   .chip.warn{background:rgba(178,59,46,.22);border-color:rgba(255,160,140,.45);color:#ffd9cf}
+  .chip.ok{background:rgba(74,124,89,.28);border-color:rgba(150,200,160,.4);color:#d7f0dc}
 
   /* ---------- NAV ---------- */
   nav.toc{
@@ -108,7 +109,7 @@
 
   /* ---------- ROUTE ---------- */
   .route{
-    display:grid;grid-template-columns:repeat(5,1fr);gap:10px;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
     background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
     padding:22px 20px;box-shadow:var(--shadow);
   }
@@ -435,9 +436,9 @@
     </g>
   </svg>
   <div class="wrap">
-    <div class="kicker"><i></i>FUKUOKA · KARATSU · YUFUIN · NAGASAKI</div>
-    <h1><small>紅葉與海島之旅</small>福岡・九州北部<br>8 日 7 夜</h1>
-    <p class="lead">四個大人、三個住宿地點、一部車。博多出發，先去呼子朝市同糸島海岸，12/7 上由布院住一晚溫泉，12/8 落長崎住兩晚，最後返博多。同行有長者，全程以「少樓梯、多坐低」為原則。</p>
+    <div class="kicker"><i></i>FUKUOKA · KARATSU · ITOJIMA · YUFUIN · KOKURA</div>
+    <h1><small>紅葉・溫泉・關門海峽</small>福岡・九州北部<br>8 日 7 夜</h1>
+    <p class="lead">四個大人、三個住宿地點、一部車。博多 3 晚（呼子朝市、糸島、市內紅葉）→ 由布院 2 晚溫泉（別府地獄）→ 小倉 2 晚（門司港、下關唐戶市場）→ 福岡機場。一條環線零折返，總車程約 5 小時。同行有長者，全程以「少樓梯、多坐低」為原則。</p>
     <div class="dates">
       <span class="big">2026.12.05</span><span class="dash"></span><span class="big">12.12</span>
       <span style="font-size:12px;letter-spacing:.2em;color:#b9c8d6">SAT — SAT</span>
@@ -447,9 +448,9 @@
       <span class="chip">自駕 · 8 人座</span>
       <span class="chip">3 基地 / 7 晚</span>
       <span class="chip">呼子朝市</span>
-      <span class="chip">軍艦島 + 原爆資料館</span>
+      <span class="chip">門司港 · 下關</span>
       <span class="chip">紅葉 2 點</span>
-      <span class="chip">每日 09:00 出發</span>
+      <span class="chip ok">環線 · 零折返</span>
       <span class="chip warn">少樓梯 · 多休息</span>
     </div>
   </div>
@@ -477,7 +478,7 @@
   <div class="sec-head">
     <span class="num">01</span>
     <h2>路線思路</h2>
-    <span class="sub">三基地 · 順時針一圈</span>
+    <span class="sub">三基地 · 一個方向走完 · 零折返</span>
   </div>
   <div class="rule"></div>
 
@@ -485,53 +486,48 @@
     <div class="stop">
       <div class="k">BASE 01</div>
       <div class="n">博多</div>
-      <div class="t">12/5 – 12/7 · 2 晚<br>呼子朝市 / 糸島 / 舞鶴紅葉</div>
+      <div class="t">12/5 – 12/8 · 3 晚<br>呼子朝市 / 糸島 / 市內紅葉</div>
     </div>
     <div class="stop">
       <div class="k">BASE 02</div>
       <div class="n">由布院</div>
-      <div class="t">12/7 – 12/8 · 1 晚<br>溫泉 / 湯の坪 / 金鱗湖</div>
+      <div class="t">12/8 – 12/10 · 2 晚<br>溫泉 / 金鱗湖 / 別府地獄</div>
     </div>
     <div class="stop">
       <div class="k">BASE 03</div>
-      <div class="n">長崎</div>
-      <div class="t">12/8 – 12/10 · 2 晚<br>原爆 / 軍艦島 / 夜景</div>
-    </div>
-    <div class="stop">
-      <div class="k">BASE 01 · 返住</div>
-      <div class="n">博多</div>
-      <div class="t">12/10 – 12/12 · 2 晚<br>柳川 / 鳥栖 Outlet</div>
+      <div class="n">小倉</div>
+      <div class="t">12/10 – 12/12 · 2 晚<br>門司港 / 下關 / 皿倉山</div>
     </div>
     <div class="stop">
       <div class="k">EXIT</div>
       <div class="n">福岡機場</div>
-      <div class="t">12/12 · 45 分鐘車程</div>
+      <div class="t">12/12 · 72–80 km<br>1 小時 15 分</div>
     </div>
   </div>
 
   <div class="logic">
     <div class="item">
-      <b>① 三個住宿地點，順時針一圈</b>
-      <p>博多（2 晚）→ 由布院（12/7 住溫泉）→ 長崎（2 晚）→ 博多（2 晚）→ 機場。只 3 個地點、搬 2 次酒店；中間三晚行李寄存博多，唔使搬嚟搬去。</p>
+      <b>① 三個基地，一路向北唔走回頭路</b>
+      <p>博多（3 晚）→ 由布院（2 晚）→ 小倉（2 晚）→ 機場。<b>福岡市 → 大分 → 北九州 → 機場</b>，地圖上就係一個順時針環。搬 2 次酒店，行李只搬 2 次，唔使寄存、唔使返住同一間。</p>
     </div>
     <div class="item">
-      <b>② 長崎住 2 晚，軍艦島有補飛</b>
-      <p>12/9 搭 10:30 班；如果欠航即場改 13:40，再唔得就 12/10 早上補飛，之後 13:00 出發返博多。冬季海象唔穩，呢個 buffer 好重要。</p>
+      <b>② 總車程 5 小時（舊案 12 小時）</b>
+      <p>最長一段只有 <b>1 小時 45 分</b>（由布院 → 小倉，行東九州道）。舊案 由布院 → 長崎 要 3 個半至 4 個鐘山路，4 位長者坐咁耐本身已經係風險；新案直接剷走，全程冇一段超過 2 小時。</p>
     </div>
     <div class="item">
-      <b>③ 紅葉只留兩個易行點</b>
-      <p>舞鶴公園（12/7）同太宰府（12/11）：兩個都平坦、多長椅，太宰府仲有免費輪椅借用。千如寺、大興善寺呢類山寺樓梯多，直接剔走，唔博。</p>
+      <b>③ 紅葉兩個點，全部平坦</b>
+      <p>舞鶴公園・大濠公園（12/7，市內，行完返酒店）同 太宰府天満宮（12/8，<b>去由布院順路</b>，境內免費借輪椅、有無障礙參拜路線）。千如寺、大興善寺呢類山寺樓梯多，直接剔走。</p>
     </div>
-  </div>
-
-  <div class="top-note">
-    <span>✈️</span>
-    <div><b>航班時間未定：</b>你話已訂但未講時間。Day 1 同 Day 8 我用「下午到、傍晚走」做骨幹，你俾我實際航班時間，我即刻幫你收緊或放鬆這兩日。</div>
   </div>
 
   <div class="top-note" style="background:#f1f7f2;border-color:#d8e8db">
+    <span>✈️</span>
+    <div><b>航班已定：</b>去程 12/5 <b>HB2386 08:40 HKG → 13:00 FUK</b>；回程 12/12 <b>HB309 13:45 FUK → 16:50 HKG</b>。所以 Day 1 下午落機（15:30 前到酒店）、Day 8 <b>09:45 由小倉出車</b>、11:05 入油還車、11:30 counter，離起飛 2 小時 15 分 —— 唔使天未光起身，但都唔好加插行程。</div>
+  </div>
+
+  <div class="top-note">
     <span>🕘</span>
-    <div><b>每日 09:00 出門口：</b>全部日程已重排，冇一日要 8 點起身。Day 5 軍艦島搭 10:30 班（唔使趕 09:00 船），Day 8 視航班再定。</div>
+    <div><b>每日 09:00 出門口：</b>全部日程已按「09:00 出發」排。唯一例外係 Day 5 金鱗湖晨霧（07:30，行 20 分鐘就返旅館食早餐），同 Day 8 回程日 09:45 出車（趕 13:45 航班）。</div>
   </div>
 </section>
 
@@ -564,7 +560,7 @@
     </div>
 
     <div class="koyo-row">
-      <div class="name"><b>太宰府天満宮</b>太宰府 · 12/11 去 · 平坦＋輪椅</div>
+      <div class="name"><b>太宰府天満宮</b>太宰府 · 12/8 去 · 平坦＋輪椅</div>
       <div class="track">
         <div class="bar" style="left:28%;width:44%;background:#d9a05b"></div>
         <div class="bar peak" style="left:40%;width:26%;background:#b23b2e"></div>
@@ -582,7 +578,7 @@
     </div>
 
     <div class="koyo-note">
-      ⚠️ 只留兩個點，全部平坦：<b>舞鶴公園・大濠公園</b>（12/7，銀杏＋紅葉，長椅多）同 <b>太宰府天満宮</b>（12/11，紅葉＋銀杏，境內免費借輪椅、有無障礙參拜路線）。12 月屬尾段，樹上未必最紅；出發前 3 日查 <b>tenki.jp/koyo</b>。如果舞鶴落葉，改 <b>友泉亭公園</b>（平坦日式庭園）。山寺（千如寺、大興善寺）樓梯多，今次直接唔去。
+      ⚠️ 只留兩個點，全部平坦：<b>舞鶴公園・大濠公園</b>（12/7，銀杏＋紅葉，長椅多、有洗手間）同 <b>太宰府天満宮</b>（12/8，紅葉＋銀杏，境內免費借輪椅、有無障礙參拜路線）。太宰府本身就在 博多 → 由布院 的路上，唔使專登兜。12 月屬尾段，樹上未必最紅；出發前 3 日查 <b>tenki.jp/koyo</b>。如果舞鶴落葉，改 <b>友泉亭公園</b>（平坦日式庭園）。
     </div>
   </div>
 </section>
@@ -612,14 +608,15 @@
       <div class="dow">SAT</div>
       <div class="date">12/05</div>
       <div class="mon">DAY 1</div>
-      <div class="base">住 博多<br>2 晚</div>
+      <div class="base">住 博多<br>3 晚</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>抵達福岡・博多之夜</h3><span class="theme">落地 · 取車 · 燈飾</span></div>
+      <div class="day-top"><h3>抵達福岡・博多之夜</h3><span class="theme">13:00 落機 · 取車 · 燈飾</span></div>
       <div class="tags"><span class="tag t-move">抵達</span><span class="tag t-night">夜景</span><span class="tag t-food">美食</span></div>
       <ul class="tl">
-        <li><span class="tm">午後</span><b>福岡機場 FUK 抵達</b><span class="sub">入境後到租車櫃檯；機場細，通關快。</span><span class="note">租車公司多在機場對面或接駁 5–10 分鐘，預留 45 分鐘取車。</span></li>
-        <li><span class="tm">15:30</span><b>取車 + 博多酒店 check-in</b><span class="sub">建議 8 人座：Noah / Voxy / Serena / Alphard</span><span class="note">必加 ETC 卡 + 免責補償（NOC）；交車前繞車拍片，記錄花痕。</span></li>
+        <li><span class="tm">13:00</span><b>福岡機場 FUK 抵達（HB2386）</b><span class="sub">國際線 T1；機場細，通關快，預留 45 分鐘入境＋取行李。</span></li>
+        <li><span class="tm">14:15</span><b>取車</b><span class="sub">建議 8 人座：Noah / Voxy / Serena / Alphard</span><span class="note">必加 ETC 卡 + 免責補償（NOC）；<b>順便問清楚有冇雪胎（スタッドレス）</b>——12/8 同 12/10 兩段會經湯布院山區。交車前繞車拍片，記錄花痕。</span></li>
+        <li><span class="tm">15:30</span><b>博多酒店 check-in</b><span class="sub">住博多駅東側（呉服町／祇園）或天神北，上高速最快。</span></li>
         <li><span class="tm">17:00</span><b>博多駅「光之街」＋天神燈飾</b><span class="sub">12 月全城點燈，博多駅前廣場同天神中央公園最集中。</span></li>
         <li><span class="tm">19:00</span><b>晚餐：中洲屋台 / 博多もつ鍋</b><span class="sub">屋台 12 月好凍，坐戶外要著夠；想舒服就食もつ鍋。</span></li>
         <li><span class="tm">21:00</span><b>中洲川端散步 · 回酒店</b><span class="sub">順路睇博多運河城夜景。</span></li>
@@ -641,7 +638,7 @@
       <div class="tags"><span class="tag t-food">朝市</span><span class="tag t-nature">自然</span><span class="tag t-food">美食</span><span class="tag t-shop">打卡</span></div>
       <ul class="tl">
         <li><span class="tm">09:00</span><b>博多出發</b><span class="sub">福岡都市高速 → 西九州道 → 唐津，一路高速。</span><span class="drive">🚗 1 小時 15 分</span></li>
-        <li><span class="tm">10:15</span><b>呼子朝市（日本三大朝市）</b><span class="sub">7:30–12:00，星期日約 70 檔（平日約 50 檔）；即場食 いか天、炭燒サザエ，買魷魚一夜干</span><span class="note">泊「呼子朝市駐車場」免費 29 位（早去先有位），滿咗泊「呼子臨港駐車場」128 位 ¥100／小時。朝市通り全程平路，輪椅／拐杖行得。想多啲檔攤，可以 08:30 出發。</span></li>
+        <li><span class="tm">10:15</span><b>呼子朝市（日本三大朝市）</b><span class="sub">7:30–12:00，星期日約 70 檔（平日約 50 檔）；即場食 いか天、炭燒サザエ，買魷魚一夜干</span><span class="note">泊「呼子朝市駐車場」免費 29 位（早去先有位），滿咗泊「呼子臨港駐車場」128 位 ¥100／小時。朝市通り全程平路，輪椅／拐杖行得。12 月係松葉蟹季，想買蟹就要 09:30 前到。</span></li>
         <li><span class="tm">11:35</span><b>午餐：呼子 いか活き造り</b><span class="sub">河太郎、萬坊；透明魷魚刺身＋魷魚燒賣，¥2,500–4,000／人</span><span class="note">要行樓梯嘅店就跳過；訂位時講明有長者，要求一樓檯。</span></li>
         <li><span class="tm">12:50</span><b>出發糸島</b><span class="sub">沿 202 号線海岸線南下，風景好，中途可以落車影相。</span><span class="drive">🚗 1 小時 5 分</span></li>
         <li><span class="tm">13:55</span><b>桜井二見ヶ浦</b><span class="sub">海中白色鳥居＋夫婦岩，停車場行 2 分鐘就到，全程平坦</span><span class="note">風大，長者喺鳥居前影相就夠，唔需要行落沙灘。</span></li>
@@ -655,77 +652,78 @@
   </article>
 
   <!-- DAY 3 -->
-  <article class="day" id="day3" data-tags="koyo nature food move">
+  <article class="day" id="day3" data-tags="koyo nature food shop">
     <div class="day-side">
       <div class="dow">MON</div>
       <div class="date">12/07</div>
       <div class="mon">DAY 3</div>
-      <div class="base">住 由布院<br>1 晚溫泉</div>
+      <div class="base">住 博多<br>輕鬆日</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>舞鶴公園紅葉 · 別府地獄 → 由布院</h3><span class="theme">紅葉 #1 · 搬基地 · 約 190 km</span></div>
-      <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-nature">地獄溫泉</span><span class="tag t-food">美食</span><span class="tag t-move">移動</span></div>
+      <div class="day-top"><h3>福岡市內紅葉 · 天神購物</h3><span class="theme">紅葉 #1 · 儲力日 · 約 15 km</span></div>
+      <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-nature">公園</span><span class="tag t-shop">購物</span></div>
       <ul class="tl">
-        <li><span class="tm">09:00</span><b>博多 check-out · 舞鶴公園（紅葉）</b><span class="sub">行李放車尾箱；福岡城跡外圍，銀杏＋紅葉，全平坦、長椅多、有洗手間</span><span class="note">行 40 分鐘就夠，唔使上城跡石階；泊車 ¥300 左右。落葉就改友泉亭公園（10 分鐘）。</span></li>
-        <li><span class="tm">09:55</span><b>出發別府</b><span class="sub">九州道 → 大分道 → 別府 IC；中途別府灣 SA 休息 15 分鐘。</span><span class="drive">🚗 2 小時 20 分</span></li>
-        <li><span class="tm">12:15</span><b>海地獄（別府地獄めぐり）</b><span class="sub">8:00–17:00 年中無休；鈷藍色熱泥池、大鬼蓮、足湯，環路平坦約 40 分鐘</span><span class="note">蒸氣位好熱，長者行外圈、影相就夠；入口有免費足湯，坐低浸腳休息。想多看一個可加「血の池地獄」（5 分鐘車程，血紅色池）。</span></li>
-        <li><span class="tm">13:10</span><b>午餐：地獄蒸し工房 鉄輪</b><span class="sub">用 98°C 地獄蒸氣自己蒸海鮮、溫泉蛋、蔬菜；約 ¥1,500–2,500／人</span><span class="note">午市最旺，可能要排 20–30 分鐘；唔想排就食別府「とり天」或海地獄附近食堂。</span></li>
-        <li><span class="tm">14:15</span><b>出發由布院</b><span class="sub">經由布院 IC，山路平順。</span><span class="drive">🚗 35 分</span></li>
-        <li><span class="tm">14:50</span><b>由布院溫泉旅館 check-in</b><span class="sub">一泊兩食；訂房時要求「私人風呂」或「家庭風呂」</span><span class="note">仲未天黑（日落 17:10），放低行李即刻可以浸浴。</span></li>
-        <li><span class="tm">16:00</span><b>湯の坪街道（可選）</b><span class="sub">旅館附近行 30–40 分鐘；攰就直接留喺旅館。</span></li>
-        <li><span class="tm">18:00</span><b>晚餐：旅館會席料理</b><span class="sub">豐後牛、地雞、季節野菜；食完早啲休息。</span></li>
+        <li><span class="tm">09:30</span><b>舞鶴公園・福岡城跡（紅葉）</b><span class="sub">銀杏＋紅葉，外圍全平坦、長椅多、有洗手間；泊車 ¥300 左右</span><span class="note">行 40 分鐘就夠，唔使上城跡石階。落葉就改<b>友泉亭公園</b>（車 10 分鐘，平坦日式庭園）。</span></li>
+        <li><span class="tm">10:40</span><b>大濠公園（銀杏並木）</b><span class="sub">環湖步道平路，行 30 分鐘；湖邊有茶室同長椅</span><span class="drive">🚗 5 分</span></li>
+        <li><span class="tm">11:50</span><b>午餐：天神 大名 一帶</b><span class="sub">博多一幸舎拉麵、天婦羅、或百貨公司餐廳（坐得舒服）</span><span class="drive">🚗 10 分</span></li>
+        <li><span class="tm">13:10</span><b>天神地下街 ＋ 博多運河城</b><span class="sub">全程室內，落雨都唔怕；藥妝、手信一次買齊</span></li>
+        <li><span class="tm">15:30</span><b>回酒店休息</b><span class="sub">今晚要收拾行李，明日搬基地。</span></li>
+        <li><span class="tm">17:00</span><b>可選：teamLab Forest（室內）</b><span class="sub">長者攰就跳過，直接留酒店。</span><span class="drive">🚗 20 分</span></li>
+        <li><span class="tm">19:00</span><b>晚餐：水炊き（博多華味鳥等）</b><span class="sub">要訂位；食完早啲休息。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">體力</span>搬基地日，揸車約 3 小時 05 分 — 比去門司港仲短 30 分鐘。海地獄全程平地，但蒸氣熱、地面濕，著防滑鞋。想輕鬆啲可以 skip 舞鶴公園，10:00 直接出發。</div>
+      <div class="day-foot"><span class="lbl">體力</span>全程最輕鬆一日，只行 3 個點、市內短途。目的係為 12/8 搬基地同 12/9 別府全日儲力。</div>
     </div>
   </article>
 
   <!-- DAY 4 -->
-  <article class="day" id="day4" data-tags="nature food move night">
+  <article class="day" id="day4" data-tags="koyo reki food nature move">
     <div class="day-side">
       <div class="dow">TUE</div>
       <div class="date">12/08</div>
       <div class="mon">DAY 4</div>
-      <div class="base">住 長崎<br>2 晚</div>
+      <div class="base">住 由布院<br>2 晚溫泉</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>由布院晨霧 → 長崎</h3><span class="theme">搬基地 · 約 220 km</span></div>
-      <div class="tags"><span class="tag t-nature">溫泉</span><span class="tag t-food">美食</span><span class="tag t-night">夜景</span><span class="tag t-move">移動</span></div>
+      <div class="day-top"><h3>太宰府紅葉 → 由布院</h3><span class="theme">紅葉 #2 · 搬基地 · 順路</span></div>
+      <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-reki">神社</span><span class="tag t-food">美食</span><span class="tag t-nature">溫泉</span><span class="tag t-move">移動</span></div>
       <ul class="tl">
-        <li><span class="tm">07:30</span><b>金鱗湖晨霧（住由布院先有）</b><span class="sub">12 月清晨湖面起霧，係由布院最出名嘅畫面；環湖 20 分鐘全程平路</span><span class="note">唔想起身都可以食完早餐先出去，09:30 前都仲有霧。</span></li>
-        <li><span class="tm">08:45</span><b>旅館早餐</b><span class="sub">一泊兩食包早餐，慢慢食。</span></li>
-        <li><span class="tm">09:45</span><b>湯の坪街道</b><span class="sub">平坦 1.2 公里，兩旁小店、甜品、咖啡；行半條街就夠</span><span class="drive">🚗 5 分</span></li>
-        <li><span class="tm">10:45</span><b>出發長崎</b><span class="sub">大分道 → 九州道 → 長崎道；中途金立 SA 休息 15 分鐘。</span><span class="drive">🚗 3 小時</span></li>
-        <li><span class="tm">13:45</span><b>長崎到著 · 午餐</b><span class="sub">新地中華街 ちゃんぽん（江山楼）或 卓袱料理（吉宗）</span></li>
-        <li><span class="tm">15:00</span><b>酒店 check-in</b><span class="sub">住長崎駅／浜町／出島一帶，去港口 10 分鐘。</span></li>
-        <li><span class="tm">16:00</span><b>出島（可選）</b><span class="sub">復原荷蘭商館，全平坦 ¥520；唔想去就喺酒店休息。</span></li>
-        <li><span class="tm">17:15</span><b>稻佐山纜車 · 山頂夜景</b><span class="sub">纜車＋山頂室內展望台，全程唔使行樓梯；來回約 ¥1,250</span><span class="note">日落 17:10、夜景 18:00 後；山頂風大，比市區低 3–4°C。</span></li>
-        <li><span class="tm">19:00</span><b>晚餐：思案橋 / 浜町</b><span class="sub">海鮮居酒屋、長崎和牛。</span></li>
+        <li><span class="tm">09:00</span><b>博多 check-out（行李上車）</b><span class="sub">車泊太宰府駐車場，行李留車尾箱。</span><span class="drive">🚗 30 分</span></li>
+        <li><span class="tm">09:40</span><b>太宰府天満宮（紅葉＋銀杏）</b><span class="sub">參道、飛梅、太鼓橋；境內免費借輪椅，有無障礙參拜路線</span><span class="note">用無障礙路線繞過太鼓橋石階；本殿前有少量梯級，喺下面參拜都可以。參道食 梅ヶ枝餅（現烤）。</span></li>
+        <li><span class="tm">11:10</span><b>可選：九州国立博物館</b><span class="sub">太宰府站旁，室內全程電扶梯＋電梯；約 ¥700</span><span class="note">落雨或長者想坐低就好用；唔去就早啲出發。</span></li>
+        <li><span class="tm">12:00</span><b>午餐：太宰府參道</b><span class="sub">だざいふ うどん、梅ヶ枝餅、或 暖暮拉麵</span></li>
+        <li><span class="tm">13:15</span><b>出發由布院</b><span class="sub">太宰府IC → 鳥栖JCT（九州道）→ 湯布院IC（大分道）→ 一般道 10 分</span><span class="drive">🚗 1 小時 20 分</span><span class="note">⚠️ 湯布院IC 一帶 12 月可能結冰，慢行、預留多 15 分鐘。</span></li>
+        <li><span class="tm">14:50</span><b>由布院溫泉旅館 check-in</b><span class="sub">一泊兩食 × 2 晚；訂房時要求「私人風呂」或「家庭風呂」</span><span class="note">仲未天黑（日落 17:10），放低行李即刻可以浸浴。</span></li>
+        <li><span class="tm">16:00</span><b>湯の坪街道（可選）</b><span class="sub">旅館附近行 30–40 分鐘；攰就直接留喺旅館。</span></li>
+        <li><span class="tm">18:00</span><b>晚餐：旅館會席料理</b><span class="sub">豐後牛、地雞、季節野菜；食完早啲休息。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">體力</span>早上由布院平坦散步，下午 3 小時車（中間休息 15 分鐘），黃昏纜車直上。原爆資料館留到 12/9，今日唔使趕。</div>
+      <div class="day-foot"><span class="lbl">體力</span>搬基地日只揸 1 小時 50 分（含太宰府），係全程第二長一段。太宰府全平坦，唔使上石階。</div>
     </div>
   </article>
 
   <!-- DAY 5 -->
-  <article class="day" id="day5" data-tags="heritage reki koyo night food">
+  <article class="day" id="day5" data-tags="nature food night">
     <div class="day-side">
       <div class="dow">WED</div>
       <div class="date">12/09</div>
       <div class="mon">DAY 5</div>
-      <div class="base">住 長崎<br>重點日</div>
+      <div class="base">住 由布院<br>全日重點</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>軍艦島 · 原爆 · 長崎市內</h3><span class="theme">世界遺產 · 全日步行</span></div>
-      <div class="tags"><span class="tag t-heritage">世界遺產</span><span class="tag t-reki">歷史</span><span class="tag t-koyo">紅葉</span><span class="tag t-food">美食</span></div>
+      <div class="day-top"><h3>金鱗湖晨霧 · 別府地獄</h3><span class="theme">溫泉日 · 來回約 50 km</span></div>
+      <div class="tags"><span class="tag t-nature">溫泉</span><span class="tag t-nature">地獄</span><span class="tag t-food">美食</span></div>
       <ul class="tl">
-        <li><span class="tm">09:45</span><b>常盤２号桟橋 受付（船內辦手續）</b><span class="sub">シーマン商会 10:30 班：09:45 受付 → 10:10 集合 → 10:30 出航 → 13:00 返港；泊縣營常盤停車場，行 3 分鐘</span><span class="note">大人 ¥4,200（網上 300 円割引券 ¥3,900）＋ 端島設施見學料 ¥650，<b>只收現金、唔收信用卡</b>，4 人預備約 ¥19,000–20,000。12/10 早上仲有一次補飛，今日欠航都唔使緊張。</span></li>
-        <li><span class="tm">10:30</span><b>出航 → 軍艦島（端島）</b><span class="sub">船上導覽、海上望三菱長崎造船廠、軍艦島全景</span><span class="note">⚠️ 上陸碼頭有 <b>10–27 級樓梯</b>（視潮汐），島內路線本身無障礙；行得慢可以扶欄杆，職員會幫。唔想上落就揀「船內待機」。</span></li>
-        <li><span class="tm">13:00</span><b>返港 · 午餐</b><span class="sub">出島ワーフ / ツル茶ん（トルコライス）</span></li>
-        <li><span class="tm">14:15</span><b>長崎原爆資料館</b><span class="sub">¥200，約 1 小時；全館電梯、無障礙</span><span class="note">2026/11/24 起 C 區「核兵器のない世界」維修關閉至 2027/3，A、B 區照開。</span></li>
-        <li><span class="tm">15:45</span><b>平和公園 · 爆心地公園</b><span class="sub">平地，有長椅；唔使行上浦上天主堂斜路。</span><span class="drive">🚗 5 分</span></li>
-        <li><span class="tm">16:45</span><b>眼鏡橋 · 長崎紅葉（可選）</b><span class="sub">妙相寺、興福寺，12 月上旬見頃；唔想行就返酒店休息。</span></li>
-        <li><span class="tm">18:00</span><b>浜町商店街 · 晚餐</b><span class="sub">カステラ手信、海鮮居酒屋。</span></li>
+        <li><span class="tm">07:30</span><b>金鱗湖晨霧</b><span class="sub">12 月清晨湖面起霧，係由布院最出名嘅畫面；環湖 20 分鐘全程平路</span><span class="note">唔想起身都可以食完早餐先出去，09:30 前都仲有霧。旅館行去 15 分鐘，或車 5 分鐘。</span></li>
+        <li><span class="tm">08:45</span><b>旅館早餐</b><span class="sub">一泊兩食包早餐，慢慢食。</span></li>
+        <li><span class="tm">09:45</span><b>出發別府</b><span class="sub">由布院 → 別府，經由布岳山腳；山路平順</span><span class="drive">🚗 35 分</span></li>
+        <li><span class="tm">10:30</span><b>海地獄（別府地獄めぐり）</b><span class="sub">8:00–17:00 年中無休；鈷藍色熱泥池、大鬼蓮、足湯，環路平坦約 40 分鐘</span><span class="note">蒸氣位好熱，長者行外圈、影相就夠；入口有免費足湯，坐低浸腳休息。</span></li>
+        <li><span class="tm">11:30</span><b>血の池地獄（可選）</b><span class="sub">血紅色熱泥池，日本最古老地獄；離海地獄 5 分鐘車程</span><span class="note">7 個地獄有共通券 ¥2,200；行兩個就夠，唔好貪。</span></li>
+        <li><span class="tm">12:15</span><b>午餐：地獄蒸し工房 鉄輪</b><span class="sub">用 98°C 地獄蒸氣自己蒸海鮮、溫泉蛋、蔬菜；約 ¥1,500–2,500／人</span><span class="note">午市最旺，可能要排 20–30 分鐘；唔想排就食別府「とり天」。</span></li>
+        <li><span class="tm">13:45</span><b>湯けむり展望台 / 別府灣（可選）</b><span class="sub">揸車上去睇別府全景，唔使行；攰就跳過直接返由布院。</span></li>
+        <li><span class="tm">15:30</span><b>回由布院</b><span class="drive">🚗 35 分</span></li>
+        <li><span class="tm">16:15</span><b>湯の坪街道 · 旅館浸浴</b><span class="sub">買手信（由布院 ロールケーキ、醬油屋）、或直接返旅館浸第二次。</span></li>
+        <li><span class="tm">18:00</span><b>晚餐：旅館會席料理</b><span class="sub">第二晚，可以叫少啲、食得輕鬆。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">Plan B</span>10:30 欠航 → 即場問同日 13:40 班；連下午都停 → 12/10 早上補飛，13:00 返港後 13:30 出發去博多。室內後備：軍艦島デジタルミュージアム、長崎歴史文化博物館。近年上陸率只有約 6 成（伊王島沖波高 0.5m 標準），12 月更低；上唔到陸會改「軍艦島周遊＋高島上陸」，設施料 ¥650 會退。</div>
+      <div class="day-foot"><span class="lbl">Plan B</span>唔想揸車／落雨 → 全日留由布院：金鱗湖、湯の坪街道、由布院駅前足湯、山上咖啡店。或者改去<b>黒川溫泉</b>（車 1 小時 10 分，入湯手形 ¥1,500 任揀 3 個湯）。</div>
     </div>
   </article>
 
@@ -735,46 +733,48 @@
       <div class="dow">THU</div>
       <div class="date">12/10</div>
       <div class="mon">DAY 6</div>
-      <div class="base">住 博多<br>2 晚</div>
+      <div class="base">住 小倉<br>2 晚</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>長崎 → 博多</h3><span class="theme">搬基地 · 150 km · 輕鬆日</span></div>
-      <div class="tags"><span class="tag t-reki">歷史</span><span class="tag t-shop">購物</span><span class="tag t-food">美食</span><span class="tag t-move">移動</span></div>
+      <div class="day-top"><h3>由布院 → 小倉 · 小倉城</h3><span class="theme">搬基地 · 約 105 km · 1 小時 45 分</span></div>
+      <div class="tags"><span class="tag t-reki">歷史</span><span class="tag t-food">市場</span><span class="tag t-shop">購物</span><span class="tag t-move">移動</span></div>
       <ul class="tl">
-        <li><span class="tm">09:15</span><b>グラバー園 · 大浦天主堂（可選）</b><span class="sub">斜行電梯直上，唔使行樓梯；居高臨下睇長崎港</span><span class="note">如果 12/9 軍艦島欠航，今日早上改為補飛，呢個點直接跳過。</span></li>
-        <li><span class="tm">10:45</span><b>酒店 check-out</b><span class="sub">行李上車。</span></li>
-        <li><span class="tm">11:00</span><b>出發博多</b><span class="sub">長崎道 → 九州道，中途金立 SA 休息 15 分鐘。</span><span class="drive">🚗 2 小時</span></li>
-        <li><span class="tm">13:00</span><b>博多 check-in · 午餐</b><span class="sub">最好同 12/5 同一間；行李已經喺房，唔使再搬。</span></li>
-        <li><span class="tm">14:30</span><b>博多／天神 購物</b><span class="sub">博多運河城、天神地下街、藥妝；全程室內，落雨都唔怕。</span></li>
-        <li><span class="tm">17:30</span><b>博多駅「光之街」燈飾</b><span class="sub">12 月全城點燈。</span></li>
-        <li><span class="tm">19:00</span><b>晚餐：もつ鍋 / 中洲屋台</b></li>
+        <li><span class="tm">08:30</span><b>旅館早餐 · 金鱗湖再散步（可選）</b><span class="sub">第二朝仲有霧，行 15 分鐘就返。</span></li>
+        <li><span class="tm">09:45</span><b>湯の坪街道買手信</b><span class="sub">最後衝刺：ロールケーキ、ぷりんどら、醬油。</span></li>
+        <li><span class="tm">10:45</span><b>出發小倉</b><span class="sub">湯布院IC → 日出JCT（大分道）→ 東九州道 → 小倉東IC；中途 別府湾SA 或 中津 休息 15 分鐘</span><span class="drive">🚗 1 小時 45 分</span><span class="note">⚠️ 呢段山路 12 月可能結冰；如果 NEXCO 顯示「冬タイヤ規制」，改行九州道（湯布院IC → 鳥栖JCT → 小倉東IC），多 20 分鐘但全高速主線。</span></li>
+        <li><span class="tm">12:45</span><b>旦過市場（午餐）</b><span class="sub">「北九州嘅廚房」，400 米室內外市場；大学堂（白飯自選配菜）、市場食堂 天ぷら</span><span class="note">市場地面平，但通道窄、人多；行外圍已經夠。附近有停車場 ¥200／30 分。</span></li>
+        <li><span class="tm">14:00</span><b>小倉酒店 check-in</b><span class="sub">住小倉駅南口／魚町一帶，行去旦過市場同魚町銀天街都係 5–10 分鐘。</span><span class="note">⚠️ 訂房一定要確認停車場：小倉駅周邊商務酒店多數 ¥1,000–1,500／晚、先到先得，部分有車高限制（1.55–2.1m）。</span></li>
+        <li><span class="tm">15:00</span><b>小倉城</b><span class="sub">天守閣有電梯直上頂層，唔使行樓梯；庭園平坦，¥350</span><span class="note">天守閣 5 樓展望台睇整個小倉市；城內有免費休憩區。</span></li>
+        <li><span class="tm">16:30</span><b>リバーウォーク北九州</b><span class="sub">室內商場＋美術館＋餐廳，全程室內有電梯</span></li>
+        <li><span class="tm">18:00</span><b>魚町銀天街（日本最古老拱廊商店街）</b><span class="sub">有蓋行人道，落雨都行得；藥妝、手信。</span></li>
+        <li><span class="tm">19:00</span><b>晚餐：小倉 焼きうどん / 関門海鮮</b><span class="sub">小倉名物 焼きうどん（一丁、さらえ等）；或 魚町 居酒屋。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">彈性</span>今日下晝完全 free，係全程 buffer：軍艦島補飛、長者休息、或者補買手信。想加節目可以撳下面「行程選項」。</div>
+      <div class="day-foot"><span class="lbl">體力</span>搬基地日 1 小時 45 分，中途休息一次。小倉三個點全部有電梯或平路，冇樓梯。</div>
     </div>
   </article>
 
   <!-- DAY 7 -->
-  <article class="day" id="day7" data-tags="koyo reki food nature">
+  <article class="day" id="day7" data-tags="reki food nature night shop">
     <div class="day-side">
       <div class="dow">FRI</div>
       <div class="date">12/11</div>
       <div class="mon">DAY 7</div>
-      <div class="base">住 博多<br>即日來回</div>
+      <div class="base">住 小倉<br>重點日</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>太宰府紅葉 · 柳川川下り</h3><span class="theme">紅葉 #2 · 來回約 130 km</span></div>
-      <div class="tags"><span class="tag t-koyo">紅葉</span><span class="tag t-reki">神社</span><span class="tag t-food">美食</span><span class="tag t-nature">水鄉</span></div>
+      <div class="day-top"><h3>門司港レトロ · 下關唐戶市場</h3><span class="theme">關門海峽 · 約 60 km</span></div>
+      <div class="tags"><span class="tag t-reki">歷史</span><span class="tag t-heritage">海峽</span><span class="tag t-food">海鮮</span><span class="tag t-night">夜景</span><span class="tag t-shop">購物</span></div>
       <ul class="tl">
-        <li><span class="tm">09:00</span><b>博多出發 → 太宰府</b><span class="sub">九州道，35 分鐘到；早到避人。</span><span class="drive">🚗 35 分</span></li>
-        <li><span class="tm">09:40</span><b>太宰府天満宮（紅葉＋銀杏）</b><span class="sub">參道、飛梅、太鼓橋；境內免費借輪椅，有無障礙參拜路線</span><span class="note">用無障礙路線繞過太鼓橋石階；本殿前有少量梯級，喺下面參拜都可以。</span></li>
-        <li><span class="tm">11:00</span><b>出發柳川</b><span class="drive">🚗 45 分</span></li>
-        <li><span class="tm">11:50</span><b>柳川 川下り（松月乗船場）</b><span class="sub">約 70 分鐘，¥2,000 左右；冬天有被爐船（こたつ舟）</span><span class="note">訂位時講明有長者：要求「腰掛け座椅子」同船員扶上落船（上落 2–3 級）。貸切船座位最舒服。</span></li>
-        <li><span class="tm">13:15</span><b>午餐：鰻魚せいろ蒸し</b><span class="sub">若松屋、川よし；柳川名物，¥3,000–4,000</span></li>
-        <li><span class="tm">14:30</span><b>回博多</b><span class="sub">車程 1 小時，返酒店放低嘢。</span><span class="drive">🚗 1 小時</span></li>
-        <li><span class="tm">15:45</span><b>博多 最後購物 / 執行李</b><span class="sub">藥妝、手信；地鐵一站直達。</span></li>
-        <li><span class="tm">18:00</span><b>晚餐：燒鳥 / 居酒屋</b><span class="sub">早啲食，早啲執行李。</span></li>
+        <li><span class="tm">09:00</span><b>出發門司港</b><span class="sub">小倉 → 門司港，行国道 3 号或都市高速</span><span class="drive">🚗 15 分</span></li>
+        <li><span class="tm">09:20</span><b>門司港レトロ</b><span class="sub">明治大正時代歐陸建築群，海邊全程平路；旧門司税関、旧門司三井倶楽部（免費）</span><span class="note">九州鉄道記念館 ¥300（有戶外實物車頭，行得攰可以坐園內長椅）。藍翼門司（Blue Wing）人行橋每小時開合，值得睇一次。</span></li>
+        <li><span class="tm">10:45</span><b>關門海峽 → 下關（唐戶）</b><span class="sub">関門トンネル（車隧道）過海，5 分鐘就到本州</span><span class="drive">🚗 10 分</span><span class="note">隧道內有「県境」標示，可以泊車影相（收費 ¥150 左右，有行人隧道入口）。</span></li>
+        <li><span class="tm">11:15</span><b>唐戶市場（午餐）</b><span class="sub">ふく（河豚）刺身、海鮮丼、握り寿司；週五至日有「いきいき活き活き馬関街」即場握寿司檔</span><span class="note">市場 1 樓平地、有座位區；長者唔使企。停車場 ¥200／小時。想食河豚套餐就 2 樓食堂（要訂）。</span></li>
+        <li><span class="tm">13:00</span><b>赤間神宮 · 日清講和記念館</b><span class="sub">平家一門之墓、紅色水天門；全部平地，免費</span><span class="drive">🚗 5 分</span></li>
+        <li><span class="tm">14:15</span><b>回小倉 / 或 THE OUTLETS KITAKYUSHU</b><span class="sub">八幡東區，約 170 間店；室內外混合，有免費泊車</span><span class="drive">🚗 25 分</span></li>
+        <li><span class="tm">16:30</span><b>皿倉山纜車 · 夜景（可選）</b><span class="sub">ケーブルカー＋スロープカー直上 622m，山頂展望台室內；「新日本三大夜景」</span><span class="note">來回約 ¥1,230／人。山頂比市區低 4–5°C，風大要著夠。日落 17:10，17:00 上山最靚。</span><span class="drive">🚗 20 分</span></li>
+        <li><span class="tm">19:30</span><b>晚餐：小倉 居酒屋 / 焼きうどん</b><span class="sub">今晚早啲食、早啲休息，明日回程。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">Plan B</span>唔想一日走兩個點 → 二選一：太宰府（紅葉）或柳川（川下り）。柳川亦可搭西鐵（天神 → 柳川 50 分鐘），唔使泊車。</div>
+      <div class="day-foot"><span class="lbl">Plan B</span>落雨或長者攰 → 刪皿倉山，改全日室內：門司港レトロ（室內館）＋リバーウォーク＋魚町銀天街。唔想過海就留門司港，焼きカレー（門司港名物）做午餐。</div>
     </div>
   </article>
 
@@ -784,18 +784,19 @@
       <div class="dow">SAT</div>
       <div class="date">12/12</div>
       <div class="mon">DAY 8</div>
-      <div class="base">回程<br>還車</div>
+      <div class="base">回程<br>13:45 起飛</div>
     </div>
     <div class="day-main">
-      <div class="day-top"><h3>鳥栖 Outlet · 機場</h3><span class="theme">購物 · 還車 · 離開</span></div>
-      <div class="tags"><span class="tag t-shop">購物</span><span class="tag t-move">離開</span></div>
+      <div class="day-top"><h3>小倉 → 福岡機場</h3><span class="theme">1 小時 15 分 · 預留 1 小時 30 分</span></div>
+      <div class="tags"><span class="tag t-shop">手信</span><span class="tag t-move">離開</span></div>
       <ul class="tl">
-        <li><span class="tm">09:40</span><b>博多出發 → 鳥栖プレミアム・アウトレット</b><span class="sub">10:00 開門，早到泊車免費；行 40 分鐘。</span><span class="drive">🚗 40 分</span></li>
-        <li><span class="tm">12:00</span><b>午餐：outlet food court 或機場</b></li>
-        <li><span class="tm">13:15</span><b>機場還車</b><span class="sub">預留 60 分鐘：加滿油、驗車、交 ETC 卡。</span><span class="drive">🚗 35 分</span></li>
-        <li><span class="tm">15:00</span><b>機場 check-in · 免稅店</b><span class="sub">福岡機場國際線細，但 12 月人多，預留 2 小時。</span></li>
+        <li><span class="tm">08:00</span><b>酒店早餐 · 執行李</b><span class="sub">今日唔趕，慢慢食。手信昨晚（Day 7）或機場買，今日唔好加插行程。</span></li>
+        <li><span class="tm">09:45</span><b>小倉 check-out → 出發機場</b><span class="sub">小倉東IC → 九州道 → 太宰府IC → 福岡都市高速 → 機場</span><span class="drive">🚗 1 小時 15 分 · 約 75 km</span><span class="note">實際車程 1 小時 15 分，但我照 <b>1 小時 30 分</b>排 —— 週六早上九州道南行往福岡通常順，但油站、找路、上錯 IC 都要時間。中途唔需要停。</span></li>
+        <li><span class="tm">11:05</span><b>機場附近入油 → 還車</b><span class="sub">セルフ 油站入滿、保留單據；驗車、交 ETC 卡</span><span class="note">還車點多數喺國際線對面或接駁 5–10 分鐘，預留 25 分鐘；交車前再繞車拍片。</span></li>
+        <li><span class="tm">11:30</span><b>國際線 check-in（HB309 13:45）</b><span class="sub">離起飛 2 小時 15 分；12 月人多，行李寄艙要排。</span></li>
+        <li><span class="tm">13:45</span><b>起飛 → 16:50 香港</b><span class="sub">禁區免稅店買 明太子、博多通りもん、小倉 菓子。</span></li>
       </ul>
-      <div class="day-foot"><span class="lbl">彈性</span>如果係早機，直接取消 outlet，07:40 出發去機場；如果係晚機，可以先去博多站買手信再出機場。</div>
+      <div class="day-foot"><span class="lbl">提醒</span>09:45 出車、11:05 入油還車、11:30 counter，離起飛 2 小時 15 分 —— 有 buffer 但唔算鬆，<b>千萬唔好加插 outlet 或博多購物</b>。如果 10:45 仍未上到九州道，即刻打電話通知租車公司遲到。</div>
     </div>
   </article>
 
@@ -815,60 +816,61 @@
 
     <div class="opt-grid">
       <div class="opt" data-k="teamlab">
-        <div class="opt-top"><span>Day 1 下午 / 落雨日</span><span class="opt-fit">室內 · 零樓梯</span></div>
+        <div class="opt-top"><span>Day 1 / Day 3 下午 · 落雨日</span><span class="opt-fit">室內 · 零樓梯</span></div>
         <h4>teamLab Forest 福岡</h4>
         <p>沉浸式數碼藝術森林，室內行、有座位；落雨或長者攰嘅後備節目。博多出發 25 分鐘。</p>
         <div class="opt-meta">2–3 小時 · 約 ¥2,000–3,000 · 博多 25 分</div>
         <button class="btn opt-btn" data-k="teamlab">加入行程</button>
       </div>
 
-      <div class="opt" data-k="gundam">
-        <div class="opt-top"><span>Day 1 或 Day 8</span><span class="opt-fit">室內外 · 零樓梯</span></div>
-        <h4>LaLaport 福岡 · 實物大 ν Gundam</h4>
-        <p>24 米高實物大鋼彈＋購物中心，行到攰有餐廳同座位；離機場 20 分鐘，好適合頭尾兩日。</p>
-        <div class="opt-meta">1.5 小時 · 免費入場 · 機場 20 分</div>
-        <button class="btn opt-btn" data-k="gundam">加入行程</button>
-      </div>
-
-      <div class="opt" data-k="chinoike">
-        <div class="opt-top"><span>Day 3 加遊</span><span class="opt-fit">平地 · 30 分鐘</span></div>
-        <h4>血の池地獄（別府）</h4>
-        <p>日本最古老嘅天然地獄，血紅色熱泥池；離海地獄只 5 分鐘車程，行得快可以加插。7 個地獄有共通券。</p>
-        <div class="opt-meta">30 分鐘 · 共通券約 ¥2,200 · 海地獄 5 分</div>
-        <button class="btn opt-btn" data-k="chinoike">加入行程</button>
-      </div>
-
-      <div class="opt" data-k="hita">
-        <div class="opt-top"><span>Day 7 取代柳川</span><span class="opt-fit">平地老街</span></div>
-        <h4>日田 豆田町 ＋ 進撃の巨人ミュージアム</h4>
-        <p>江戶天領商家老街，350 米平路；作者故鄉限定博物館。博多出發 1 小時 45 分，想換走柳川呢日可以用。</p>
-        <div class="opt-meta">半日 · 博物館另收費 · 博多 1 小時 45 分</div>
-        <button class="btn opt-btn" data-k="hita">加入行程</button>
-      </div>
-
       <div class="opt" data-k="kyuhaku">
-        <div class="opt-top"><span>Day 5 加長太宰府</span><span class="opt-fit">室內 · 電扶梯</span></div>
+        <div class="opt-top"><span>Day 4 加遊（太宰府）</span><span class="opt-fit">室內 · 電扶梯</span></div>
         <h4>九州国立博物館</h4>
         <p>太宰府站旁，室內全程電扶梯＋電梯；亞洲文化交流館藏，落雨最啱。長者可以坐低睇重點展品。</p>
         <div class="opt-meta">1.5 小時 · 約 ¥700 · 太宰府站 5 分</div>
         <button class="btn opt-btn" data-k="kyuhaku">加入行程</button>
       </div>
 
-      <div class="opt" data-k="dejima">
-        <div class="opt-top"><span>Day 5 黃昏</span><span class="opt-fit">海邊平地 · 零樓梯</span></div>
-        <h4>出島ワーフ ＋ 水辺の森公園</h4>
-        <p>長崎港海邊晚餐＋夜景，全程平地；唔使再揸車，食完行返酒店都得。</p>
-        <div class="opt-meta">1 小時 · 免費 · 長崎站 10 分</div>
-        <button class="btn opt-btn" data-k="dejima">加入行程</button>
+      <div class="opt" data-k="chinoike">
+        <div class="opt-top"><span>Day 5 加遊（別府）</span><span class="opt-fit">平地 · 30 分鐘</span></div>
+        <h4>血の池地獄 ＋ 龍巻地獄</h4>
+        <p>日本最古老嘅天然地獄，血紅色熱泥池；離海地獄 5 分鐘。龍巻地獄有間歇噴泉（每 30–40 分鐘一次）。</p>
+        <div class="opt-meta">1 小時 · 共通券約 ¥2,200 · 海地獄 5 分</div>
+        <button class="btn opt-btn" data-k="chinoike">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="kurokawa">
+        <div class="opt-top"><span>Day 5 取代別府</span><span class="opt-fit">溫泉老街 · 少量梯級</span></div>
+        <h4>黒川溫泉 入湯手形</h4>
+        <p>¥1,500 任揀 3 個露天風呂，山林溫泉老街；比別府靜，適合想真正休息嘅一日。由布院車程 1 小時 10 分。</p>
+        <div class="opt-meta">半日 · ¥1,500／人 · 由布院 1 小時 10 分</div>
+        <button class="btn opt-btn" data-k="kurokawa">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="sarakurayama">
+        <div class="opt-top"><span>Day 7 黃昏</span><span class="opt-fit">纜車 · 室內展望台</span></div>
+        <h4>皿倉山 夜景</h4>
+        <p>ケーブルカー＋スロープカー直上 622m，山頂展望台室內有暖氣；「新日本三大夜景」。唔使行山。</p>
+        <div class="opt-meta">1.5 小時 · 約 ¥1,230／人 · 小倉 20 分</div>
+        <button class="btn opt-btn" data-k="sarakurayama">加入行程</button>
+      </div>
+
+      <div class="opt" data-k="outlets">
+        <div class="opt-top"><span>Day 7 下午</span><span class="opt-fit">室內外 · 免費泊車</span></div>
+        <h4>THE OUTLETS KITAKYUSHU</h4>
+        <p>約 170 間店，八幡東區；有免費泊車同 food court。取代皿倉山或者兩樣都做（先去 outlet 再上山）。</p>
+        <div class="opt-meta">2 小時 · 免費入場 · 小倉 20 分</div>
+        <button class="btn opt-btn" data-k="outlets">加入行程</button>
       </div>
     </div>
   </div>
 </section>
+
 <section id="stay">
   <div class="sec-head">
     <span class="num">04</span>
-    <h2>三個住宿地點 · Airbnb／溫泉旅館</h2>
-    <span class="sub">博多 2 晚 → 由布院 1 晚 → 長崎 2 晚 → 博多 2 晚</span>
+    <h2>三個住宿地點</h2>
+    <span class="sub">博多 3 晚 → 由布院 2 晚 → 小倉 2 晚</span>
   </div>
   <div class="rule"></div>
 
@@ -876,11 +878,11 @@
     <div class="stay">
       <div class="city">BASE 01</div>
       <h4>博多</h4>
-      <div class="nights">12/5 – 12/7 · 2 晚　＋　12/10 – 12/12 · 2 晚</div>
+      <div class="nights">12/5 – 12/8 · 3 晚</div>
       <ul>
         <li><b>住邊好</b><br>博多駅東側（呉服町／祇園／博多站前）或天神北。上高速最快，行去屋台／地鐵 10 分鐘內。</li>
-        <li><b>點訂最慳</b><br>訂同一間，分兩段預約（12/5–7、12/10–12）；中間去由布院／長崎三晚，同房東講聲寄存行李，唔使搬嚟搬去。</li>
-        <li><b>搵咩類型</b><br>2LDK 公寓，2 間房＋客廳；4 人住剛剛好。</li>
+        <li><b>點訂最慳</b><br>連續 3 晚一筆訂，唔使搬房；3 晚通常比 2 晚有更好房價。</li>
+        <li><b>搵咩類型</b><br>2LDK 公寓（2 房＋客廳）或 2 間 twin 酒店房；4 人住剛剛好。</li>
         <li><b>一定要有</b><br>平面泊車位（8 人座高 1.85m，立體停車場入唔到）或附近 ¥1,500–2,000／晚停車場。</li>
         <li><b>注意</b><br>博多站周邊多數係公寓式民泊，行李上樓可能冇電梯，訂前問清楚樓層。</li>
         <li class="price">參考：¥18,000–25,000／晚（整間）</li>
@@ -890,42 +892,43 @@
     <div class="stay">
       <div class="city">BASE 02</div>
       <h4>由布院</h4>
-      <div class="nights">12/7 – 12/8 · 1 晚</div>
+      <div class="nights">12/8 – 12/10 · 2 晚</div>
       <ul>
         <li><b>住邊好</b><br>湯の坪街道／由布院駅周邊，行去金鱗湖 15 分鐘；多數溫泉旅館有接送。</li>
-        <li><b>揀咩類型</b><br>一泊兩食溫泉旅館（私人風呂），或 Airbnb 整間連溫泉；4 人建議 2 間和室。</li>
-        <li><b>一定要有</b><br>私人／家庭風呂（長者唔使同人迫）、房內暖氣、泊車位。</li>
-        <li><b>注意</b><br>12 月 0–8°C；部分旅館房間冇淋浴、只可以去大浴場，訂前問清楚。</li>
-        <li class="price">參考：旅館一泊兩食 ¥30,000–45,000／人；Airbnb 整間 ¥30,000–45,000／晚</li>
+        <li><b>揀咩類型</b><br><b>2 晚建議同一間</b>：多數旅館連泊有折扣，而且 12 月好多要求 2 晚起。4 人訂 2 間和室，或 1 間大和室＋洋室。</li>
+        <li><b>省錢做法</b><br>第 1 晚 一泊二食（體驗），第 2 晚改「素泊」或「朝食付」，可省約 ¥60,000（4 人）。</li>
+        <li><b>一定要有</b><br>私人／家庭風呂（長者唔使同人迫）、房內暖氣、免費泊車。</li>
+        <li><b>注意</b><br>12 月 0–8°C，山區可能落雪；部分旅館房間冇淋浴、只可以去大浴場，訂前問清楚。</li>
+        <li class="price">參考：一泊二食 ¥30,000–45,000／人／晚；素泊 ¥12,000–18,000／人</li>
       </ul>
     </div>
 
     <div class="stay">
       <div class="city">BASE 03</div>
-      <h4>長崎</h4>
-      <div class="nights">12/8 – 12/10 · 2 晚</div>
+      <h4>小倉</h4>
+      <div class="nights">12/10 – 12/12 · 2 晚</div>
       <ul>
-        <li><b>住邊好</b><br>長崎駅周辺／出島／浜町。去長崎港 10 分鐘、原爆資料館 15 分鐘。</li>
-        <li><b>搵咩類型</b><br>2LDK 公寓或一戶建；長崎坡多，揀平地或近電車站。</li>
-        <li><b>一定要有</b><br>車位最緊要 — 長崎市區街泊好少，冇車位要泊 ¥1,000–1,500／晚停車場。</li>
-        <li><b>注意</b><br>部分舊區街道窄，8 人座轉彎要小心；揀有「駐車場あり」標示。</li>
-        <li class="price">參考：¥16,000–22,000／晚（整間）</li>
+        <li><b>住邊好</b><br>小倉駅南口／魚町／紺屋町。行去旦過市場 5 分鐘、魚町銀天街 3 分鐘；上九州道 10 分鐘。</li>
+        <li><b>搵咩類型</b><br>商務酒店 2 間 twin（JR九州ホテルブラッサム小倉、ホテルクラウンパレス小倉、ダイワロイネット），或 2LDK 公寓。</li>
+        <li><b>一定要有</b><br><b>停車場係關鍵</b>：小倉駅周邊多數 ¥1,000–1,500／晚、先到先得，部分有車高限制（1.55–2.1m）。訂房時要問清楚「駐車場の高さ制限」同「予約可否」。</li>
+        <li><b>注意</b><br>週末（12/11–12）小倉有活動時房價會跳；越早訂越好。</li>
+        <li class="price">參考：¥9,000–14,000／房／晚（twin）</li>
       </ul>
     </div>
   </div>
 
   <div class="callout airbnb-check">
-    <b>訂 Airbnb 前，逐項確認（自駕版特別重要）</b>
+    <b>訂房前，逐項確認（自駕＋長者版）</b>
     <ul>
       <li>① <b>合法牌照</b>：listing 要顯示「住宅宿泊事業」許可番号</li>
       <li>② <b>泊車尺寸</b>：8 人座 4.7m × 1.85m，機械式一定入唔到</li>
-      <li>③ <b>入住時間</b>：夜機到要確認 lockbox／自助入住</li>
+      <li>③ <b>泊車預約</b>：小倉／博多商務酒店多數先到先得，問清楚</li>
       <li>④ <b>床型</b>：2 張雙人床 vs 4 張單人，講清楚</li>
       <li>⑤ <b>暖氣＋熱水</b>：12 月一定要問，舊樓熱水爐可能唔夠 4 人連續沖</li>
-      <li>⑥ <b>清潔費</b>：住 2 晚要計總價，唔好只睇每晚價</li>
-      <li>⑦ <b>取消政策</b>：揀彈性，軍艦島天氣有變都改得</li>
+      <li>⑥ <b>清潔費</b>：3 次訂房要計總價，唔好只睇每晚價</li>
+      <li>⑦ <b>取消政策</b>：揀彈性，山區天氣有變都改得</li>
       <li>⑧ <b>樓梯／電梯</b>：4 件大行李上 3 樓會想死</li>
-      <li>⑨ <b>中間寄存</b>：博多分兩段住，要問清楚可唔可以寄存行李 2 晚</li>
+      <li>⑨ <b>由布院連泊</b>：問清楚第 2 晚可唔可以改素泊、有冇連泊折扣</li>
     </ul>
   </div>
 </section>
@@ -944,15 +947,15 @@
       <h4>輸入條件</h4>
       <div class="inputs">
         <div class="field"><label>人數</label><input id="b-people" type="number" value="4" min="1"></div>
-        <div class="field"><label>住宿晚數</label><input id="b-nights" type="number" value="7" min="0"></div>
-        <div class="field"><label>住宿每晚（¥ · 整間）</label><input id="b-room" type="number" value="20000" step="1000"></div>
-        <div class="field"><label>由布院 1 晚（¥ · 全組）</label><input id="b-yufuin" type="number" value="40000" step="1000"></div>
-        <div class="field"><label>清潔費合計（¥ · 4 次訂房）</label><input id="b-clean" type="number" value="28000" step="1000"></div>
+        <div class="field"><label>總晚數</label><input id="b-nights" type="number" value="7" min="0"></div>
+        <div class="field"><label>博多／小倉 每晚（¥ · 整組）</label><input id="b-room" type="number" value="20000" step="1000"></div>
+        <div class="field"><label>由布院 2 晚合計（¥ · 全組）</label><input id="b-yufuin" type="number" value="200000" step="10000"></div>
+        <div class="field"><label>清潔費合計（¥ · 3 次訂房）</label><input id="b-clean" type="number" value="21000" step="1000"></div>
         <div class="field"><label>租車日數</label><input id="b-cardays" type="number" value="8" min="0"></div>
         <div class="field"><label>租車每日（¥）</label><input id="b-carrate" type="number" value="18000" step="1000"></div>
-        <div class="field"><label>油費＋過路＋泊車（¥）</label><input id="b-carextra" type="number" value="33000" step="1000"></div>
+        <div class="field"><label>油費＋過路＋泊車（¥）</label><input id="b-carextra" type="number" value="28000" step="1000"></div>
         <div class="field"><label>每人每日餐費（¥）</label><input id="b-meal" type="number" value="8000" step="500"></div>
-        <div class="field"><label>每人門票活動（¥）</label><input id="b-ticket" type="number" value="11000" step="500"></div>
+        <div class="field"><label>每人門票活動（¥）</label><input id="b-ticket" type="number" value="12000" step="500"></div>
         <div class="field"><label>每人購物雜費（¥）</label><input id="b-misc" type="number" value="20000" step="1000"></div>
         <div class="field"><label>匯率（1 ¥ = ? MOP）</label><input id="b-fx" type="number" value="0.053" step="0.001"></div>
         <div class="field"><label>&nbsp;</label><button class="btn ghost" onclick="resetBudget()">回復預設</button></div>
@@ -964,7 +967,7 @@
         </div>
         <div class="per" id="b-per">每人 ¥0 · 約 MOP 0</div>
       </div>
-      <div class="disclaimer">粗算用，未含機票、簽證、購物退稅。住宿＝6 晚 Airbnb + 由布院 1 晚（預設 ¥40,000，可改）＋ 4 次訂房清潔費；租車以 8 人座 + ETC + 免責補償估算。由布院溫泉旅館一泊兩食通常 ¥30,000–45,000／人，會貴過呢個數。</div>
+      <div class="disclaimer">粗算用，未含機票、簽證、購物退稅。住宿＝博多 3 晚＋小倉 2 晚（每晚價 × 5）＋ 由布院 2 晚（預設 ¥200,000＝4 人 × ¥25,000 × 2 晚，可改）＋ 3 次訂房清潔費；租車以 8 人座 + ETC + 免責補償估算。<b>由布院一泊二食通常 ¥30,000–45,000／人／晚</b>，即 2 晚全包可到 ¥240,000–360,000；想控成本就第 2 晚改素泊。</div>
     </div>
 
     <div class="panel">
@@ -995,13 +998,11 @@
 
   <div class="groups">
     <div class="group">
-      <h4>最急 · 一定要訂 <span class="hint">軍艦島最優先</span></h4>
-      <label class="ck"><input type="checkbox" data-k="gunkan"><span>軍艦島上陸クルーズ（12/9 10:30 班）<small>シーマン商会 095-818-1105；09:45 受付／10:10 集合。大人 ¥4,200（割引券 ¥3,900）＋設施料 ¥650，只收現金。前一日中午前取消免費，之後 100%。預約時講明有長者。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="car"><span>租車（12/5 機場取 · 12/12 機場還）<small>8 人座 + ETC 卡 + 免責補償（NOC）；4 人 4 件大行李，7 人車會好逼。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="hotel-f"><span>博多 Airbnb 2 晚（12/5–12/7）<small>整間 2LDK；要有平面車位（8 人座入唔到立體停車場）。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="hotel-y"><span>由布院溫泉旅館 1 晚（12/7）<small>一泊兩食，要求私人／家庭風呂；4 人訂 2 間和室。熱門旅館 12 月好快滿，優先訂。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="hotel-n"><span>長崎 Airbnb／酒店 2 晚（12/8–12/10）<small>住兩晚，軍艦島有補飛機會；揀近長崎港（去軍艦島 10 分鐘）＋有車位。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="hotel-k"><span>博多 Airbnb 第 2 段 2 晚（12/10–12/12）<small>最好同第一段同一間，問清楚中間兩晚可以寄存行李。</small></span></label>
+      <h4>最急 · 一定要訂 <span class="hint">由布院最優先</span></h4>
+      <label class="ck"><input type="checkbox" data-k="hotel-y"><span>由布院溫泉旅館 2 晚（12/8–12/10）<small>一泊兩食，要求私人／家庭風呂；4 人訂 2 間和室。12 月熱門旅館好快滿，而且好多要求連泊 2 晚起 — <b>呢個最優先訂</b>。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="car"><span>租車（12/5 機場取 · 12/12 機場還）<small>8 人座 + ETC 卡 + 免責補償（NOC）；<b>加問雪胎（スタッドレス）</b>，12/8 同 12/10 兩段經湯布院山區。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="hotel-f"><span>博多住宿 3 晚（12/5–12/8）<small>整間 2LDK 或 2 間 twin；要有平面車位（8 人座入唔到立體停車場）。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="hotel-k"><span>小倉住宿 2 晚（12/10–12/12）<small>小倉駅南口／魚町一帶；<b>訂房時問清楚駐車場高度限制同可否預約</b>（¥1,000–1,500／晚，先到先得）。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="idp"><span>國際駕駛執照<small>澳門交通事務局／一戶通申請；澳門車牌有效期要剩 30 日以上。日本承認澳門發出的 1949 日內瓦公約樣式 IDP。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="insurance"><span>旅遊保險（自駕、醫療、行程取消）<small>租車公司保險唔包人身，另外買。</small></span></label>
     </div>
@@ -1009,20 +1010,20 @@
     <div class="group">
       <h4>建議預訂</h4>
       <label class="ck"><input type="checkbox" data-k="oyster"><span>呼子 いか活き造り午餐（12/6 · 河太郎／萬坊）<small>訂位講明有長者，要求一樓檯。想改食蠔：岐志漁港牡蠣小屋（中宮丸／日進丸）一定要預約。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="yanagawa"><span>柳川 川下り（12/11 上午 · 松月乗船場）<small>要「腰掛け座椅子」＋船員扶上落船；貸切船座位最舒服。預約時講明有長者。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="ropeway"><span>稻佐山纜車（12/8 黃昏）<small>現場買票，但日落前 30 分鐘排隊。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="restaurant"><span>一餐正式晚餐（長崎卓袱 / 博多もつ鍋）<small>4 人建議訂位。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="fugu"><span>唐戶市場 ふく套餐（12/11 午餐 · 2 樓食堂）<small>想食正式河豚套餐要訂；只想食刺身／寿司就唔使訂，1 樓即買。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="motsu"><span>博多 もつ鍋／水炊き 一餐（12/7）<small>4 人建議訂位。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="ropeway"><span>皿倉山 纜車（12/11 黃昏，可選）<small>現場買票，但日落前 30 分鐘排隊。</small></span></label>
 
       <h4 style="margin-top:18px">出發前 3 日</h4>
-      <label class="ck"><input type="checkbox" data-k="koyo"><span>查紅葉情報<small>tenki.jp/koyo；如果舞鶴公園已落葉，改友泉亭公園或大濠公園，太宰府照去。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="weather"><span>查天氣同海浪<small>軍艦島看長崎海上警報；大風會停航。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="koyo"><span>查紅葉情報<small>tenki.jp/koyo；如果舞鶴公園已落葉，改友泉亭公園，太宰府照去。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="snow"><span>查山路雪況／冬タイヤ規制<small>NEXCO 西日本「通行止め・規制情報」；重點睇 大分自動車道（湯布院IC～由布岳）同 東九州自動車道（日出JCT～小倉東）。有規制就改行九州道。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="vjw"><span>Visit Japan Web 入境 QR</span></label>
-      <label class="ck"><input type="checkbox" data-k="keiyaku"><span>軍艦島「誓約書」每人 1 張（打印＋簽名）<small>官網 PDF 下載，寫地址／姓名／電話，當日受付要交。島上唔准開遮，帶輕便雨衣（船上亦有售 ¥200）。</small></span></label>
+      <label class="ck"><input type="checkbox" data-k="flight"><span>網上預辦登機（HB2386 / HB309）<small>大灣區航空無餐膳，可以自備；起飛前 48 小時開。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="esim"><span>eSIM / 數據卡（車上用 Google Maps 要數據）</span></label>
       <label class="ck"><input type="checkbox" data-k="cash"><span>換日圓現金（呼子朝市、牡蠣小屋、神社、小店）</span></label>
       <label class="ck"><input type="checkbox" data-k="elder"><span>長者裝備：摺凳、暖水、常用藥、拐杖<small>太宰府天滿宮可免費借輪椅（社務所／案內所），唔使預約。</small></span></label>
       <label class="ck"><input type="checkbox" data-k="docs"><span>文件包：護照、澳門車牌正本、國際車牌、租車／酒店確認信<small>全部截圖離線保存。</small></span></label>
-      <label class="ck"><input type="checkbox" data-k="carstuff"><span>車用品：電話支架、車充、AUX 線</span></label>
+      <label class="ck"><input type="checkbox" data-k="carstuff"><span>車用品：電話支架、車充、AUX 線、擋風玻璃除霧布</span></label>
     </div>
   </div>
 </section>
@@ -1052,22 +1053,22 @@
     <div class="info">
       <h4><span class="dot"></span>天氣與衣著（12 月上旬）</h4>
       <ul>
-        <li>福岡／博多 8–14°C、長崎 9–15°C、由布院 0–8°C；早晚溫差大，山區再低 3–4°C。</li>
-        <li>軍艦島海上風大體感更凍：防風外套、帽、頸巾、手套。</li>
+        <li>福岡／博多 8–14°C、小倉／門司 8–13°C、由布院 0–8°C；早晚溫差大，山區再低 3–4°C。</li>
+        <li>由布院海拔約 500m，<b>12 月可能落雪或結霜</b>：保暖內衣、羽絨、防水鞋。</li>
+        <li>皿倉山（622m）同門司港海邊風大體感更凍：防風外套、帽、頸巾、手套。</li>
         <li>12 月日落約 <b>17:10</b>，行程盡量早出發，四點半後天黑得快。</li>
-        <li>雨具帶摺傘；九州北部 12 月落雪少，但高速可能因事故塞車。</li>
         <li>室內暖氣強，用洋蔥式穿法。</li>
       </ul>
     </div>
 
     <div class="info warnbox">
-      <h4><span class="dot"></span>軍艦島：要知的風險</h4>
+      <h4><span class="dot"></span>冬季山路：雪胎與規制</h4>
       <ul>
-        <li>冬季海象不穩，<b>欠航或不能上陸</b>的機率比其他季節高；就算天晴都可能因浪大取消。</li>
-        <li>船公司會在前一日或當日早上通知；留一個日本當地收得到的電話（酒店電話可）。</li>
-        <li>不能上陸通常退部分費用，觀光船仍會繞島；詳情看各公司條款。</li>
-        <li>易暈浪：出發前 30 分鐘食暈浪藥，坐船尾室外位。</li>
-        <li>島上步道有高低差，著好行的鞋；不能進入建築物。</li>
+        <li>12/8（太宰府→由布院，經湯布院IC）同 12/10（由布院→小倉，經由布岳／日出JCT）兩段都在山區，<b>清晨同夜間可能結冰</b>。</li>
+        <li>大分自動車道 湯布院IC～由布岳スマートIC 一帶，落雪時會實施 <b>冬タイヤ規制</b>（冇雪胎唔准入）。</li>
+        <li>租車時<b>明確要求 スタッドレス（雪胎）</b>，唔要「チェーン規制対応」就算；九州租車公司未必隻隻車有，要早訂。</li>
+        <li>出發前查 <b>NEXCO 西日本 通行止め・規制情報</b>（w-nexco.co.jp）。有規制就改行 九州道（湯布院IC → 鳥栖JCT → 小倉東IC），多約 20 分鐘但全高速主線。</li>
+        <li>結冰路面唔好急煞、唔好大角度扭方向；落坡用低速檔。</li>
       </ul>
     </div>
 
@@ -1084,9 +1085,9 @@
     <div class="info">
       <h4><span class="dot"></span>長者同行 · 樓梯地圖</h4>
       <ul>
-        <li><b>零樓梯（推介）</b>：太宰府天満宮（免費借輪椅、有無障礙參拜路線）、原爆資料館（全館電梯）、稻佐山（纜車＋室內展望台）、舞鶴公園、出島、別府海地獄（平地環路）、長崎スタジアムシティ。</li>
-        <li><b>少量樓梯（要扶）</b>：軍艦島碼頭 10–27 級、柳川上落船 2–3 級、別府個別池邊濕滑、グラバー園斜路。</li>
-        <li><b>唔安排</b>：千如寺、大興善寺、高良大社（山寺樓梯多）。</li>
+        <li><b>零樓梯（推介）</b>：太宰府天満宮（免費借輪椅、有無障礙參拜路線）、小倉城（天守閣有電梯）、リバーウォーク、旦過市場、魚町銀天街（有蓋）、門司港レトロ（平地）、唐戶市場（1 樓平地）、皿倉山（纜車＋室內展望台）、舞鶴公園・大濠公園、別府海地獄（平地環路）。</li>
+        <li><b>少量樓梯（要扶）</b>：柳川川下り上落船（如加，2–3 級）、関門トンネル行人隧道（有斜路）、別府個別池邊濕滑。</li>
+        <li><b>唔安排</b>：皿倉山登山步道、由布岳登山口、千如寺、大興善寺。</li>
         <li>每個景點之間預留 15 分鐘休息；車上放摺凳同暖水。</li>
       </ul>
     </div>
@@ -1094,9 +1095,10 @@
     <div class="info">
       <h4><span class="dot"></span>泊車與道路</h4>
       <ul>
-        <li>博多／天神泊車 ¥300–600／小時；Airbnb 泊車位要先問清楚尺寸同費用。</li>
-        <li>長崎市區路窄、坡多，Airbnb 車位一定要先確認（平面位，唔好揀機械式）。</li>
-        <li>由布院：湯の坪停車場 ¥500–1,000，旺季 10 點前到；溫泉旅館多數有免費泊車。</li>
+        <li>博多／天神泊車 ¥300–600／小時；酒店泊車位要先問清楚尺寸同費用。</li>
+        <li><b>小倉</b>：小倉駅周邊酒店停車場多數 ¥1,000–1,500／晚、先到先得，部分車高限制 1.55–2.1m；旦過市場附近 ¥200／30 分。</li>
+        <li><b>由布院</b>：湯の坪停車場 ¥500–1,000，旺季 10 點前到；溫泉旅館多數有免費泊車。</li>
+        <li><b>門司港</b>：レトロ 駐車場 ¥300／小時左右；<b>唐戶市場</b> ¥200／小時，週末爆滿，11:00 前到。</li>
         <li>太宰府周末停車場爆滿，最好 10 點前到。</li>
         <li>加油站：自助（セルフ）先付款；還車前加滿並保留單據。</li>
       </ul>
@@ -1107,8 +1109,8 @@
       <ul>
         <li>警察 <b>110</b>、消防救護 <b>119</b>；租車公司有 24 小時道路救援電話，貼在車上。</li>
         <li>香港／澳門旅客免簽 90 日；護照有效期 6 個月以上。</li>
-        <li>長崎原爆資料館：¥200，開放 8:30–17:30（最後入館 17:00）。</li>
-        <li>光明禅寺內部暫停開放，只可外觀，唔好排入場時間。</li>
+        <li>小倉城天守閣 ¥350，開放 9:00–17:00（最後入館 16:30）。</li>
+        <li>皿倉山 ケーブルカー 來回約 ¥1,230，運行至 22:00 左右（冬季班次較疏，上山前查時刻表）。</li>
         <li>日本多數地方仍收現金；便利店可 ATM 提款。</li>
       </ul>
     </div>
@@ -1126,12 +1128,14 @@
 
   <table class="risk">
     <tr><th style="width:170px">情況</th><th>即刻做</th></tr>
-    <tr><td>軍艦島上午欠航</td><td>即場問船公司改 13:40 シーマン／14:00 軍艦島クルーズ；下午都停 → 改去軍艦島デジタルミュージアム（室內，有 VR 同模型）。</td></tr>
-    <tr><td>軍艦島全日停航</td><td>長崎住 2 晚，直接改 12/10 早上 10:30 班補飛，13:00 返港後 13:30 出發返博多（15:30 到）；12/11 太宰府＋柳川照去。仲停就放棄，改軍艦島デジタルミュージアム。</td></tr>
+    <tr><td>湯布院山路段結冰／通行止</td><td>睇 NEXCO 規制情報；改行 九州道（湯布院IC → 鳥栖JCT → 小倉東IC），多約 20 分鐘。如果全日封閉，延後至下午出發，或取消別府改留由布院。</td></tr>
+    <tr><td>租車冇雪胎</td><td>即場要求換車，或問清楚「チェーン規制時可唔可以裝鏈」；唔得就盡量行 九州道 主線，避免走山區一般道。</td></tr>
     <tr><td>舞鶴公園已落葉</td><td>改友泉亭公園（平坦日式庭園，紅葉＋茶室）或大濠公園（銀杏）；太宰府照去，兩個點都平坦。</td></tr>
-    <tr><td>長者行到攰 / 唔想行</td><td>即場刪下一個景點，返車或找咖啡店休息；太宰府可借輪椅；唔好為趕行程逼長者行樓梯。</td></tr>
-    <tr><td>落雨</td><td>室內替補：九州國立博物館（太宰府）、長崎歴史文化博物館、マリンワールド海の中道、アミュプラザ博多。</td></tr>
-    <tr><td>高速塞車／事故</td><td>改用国道 3 号／202 号；預留 buffer，重要預約（軍艦島、牡蠣小屋）打電話通知。</td></tr>
+    <tr><td>太宰府人太多／落雨</td><td>改去九州国立博物館（室內、電扶梯）；或提早 13:00 出發去由布院，早啲 check-in 浸溫泉。</td></tr>
+    <tr><td>長者行到攰 / 唔想行</td><td>即場刪下一個景點，返車或找咖啡店休息；太宰府可借輪椅；小倉全部景點有電梯／平路，唔使逼長者行樓梯。</td></tr>
+    <tr><td>落雨</td><td>室內替補：九州国立博物館（太宰府）、リバーウォーク北九州、小倉城、魚町銀天街（有蓋）、teamLab Forest、アミュプラザ博多。</td></tr>
+    <tr><td>高速塞車／事故</td><td>改用国道 3 号（博多–小倉）／国道 10 号（小倉–別府）／国道 202 号（糸島）；預留 buffer，重要預約打電話通知。</td></tr>
+    <tr><td>Day 8 路上塞車</td><td>09:45 出車，實際車程 1 小時 15 分、排 1 小時 30 分，離起飛 2 小時 15 分。如果 11:00 仍未到太宰府IC，即刻打電話通知航空公司同租車公司，唔好自己硬闖；必要時跳過入油同驗車拍照，直接交車。</td></tr>
     <tr><td>有人病／受傷</td><td>119 叫救護車（有中文翻譯服務）；旅遊保險熱線先開 case，保留收據。</td></tr>
     <tr><td>租車撞花</td><td>報警（110）攞事故證明，影相，通知租車公司；有 NOC 補償就交定額，唔好私下和解。</td></tr>
   </table>
@@ -1141,8 +1145,8 @@
 
 <footer>
   <div class="wrap">
-    <div>福岡・九州北部 8 日 7 夜｜2026.12.05 – 12.12｜4 成人 · 自駕 · 3 基地</div>
-    <div>資料整理：2026-10-26 · 票價、時間、紅葉狀況出發前再確認</div>
+    <div>福岡・九州北部 8 日 7 夜｜2026.12.05 – 12.12｜4 成人 · 自駕 · 3 基地（博多 / 由布院 / 小倉）</div>
+    <div>更新：2026-11-05 · 航班 HB2386 / HB309 · 票價、時間、紅葉狀況出發前再確認</div>
   </div>
 </footer>
 
@@ -1188,7 +1192,8 @@
     var misc   = num('b-misc');
     var fx     = num('b-fx');
 
-    var stay = Math.max(0, nights - 1) * room + yufuin + clean;
+    /* 由布院 2 晚獨立計，其餘晚數用 room 價 */
+    var stay = Math.max(0, nights - 2) * room + yufuin + clean;
     var car  = cdays * crate + cextra;
     var eat  = people * cdays * meal;
     var tick = people * ticket;
@@ -1228,7 +1233,7 @@
   calc();
 
   /* ---------- 勾選清單（localStorage） ---------- */
-  var KEY = 'fukuoka2026.checklist.v1';
+  var KEY = 'fukuoka2026.checklist.v2';
   var boxes = Array.prototype.slice.call(document.querySelectorAll('.ck input'));
   var saved = {};
   try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { saved = {}; }
@@ -1256,7 +1261,7 @@
   };
 
   /* ---------- 行程選項（會記住） ---------- */
-  var OPT_KEY = 'fukuoka2026.options.v1';
+  var OPT_KEY = 'fukuoka2026.options.v2';
   var optState = {};
   try { optState = JSON.parse(localStorage.getItem(OPT_KEY) || '{}'); } catch(e) { optState = {}; }
   var optBtns = Array.prototype.slice.call(document.querySelectorAll('.opt-btn'));
